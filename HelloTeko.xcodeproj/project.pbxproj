@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01BBA984260ED9C600792BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA983260ED9C600792BF0 /* AppDelegate.swift */; };
+		01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA985260ED9C600792BF0 /* SceneDelegate.swift */; };
+		01BBA988260ED9C600792BF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA987260ED9C600792BF0 /* ViewController.swift */; };
+		01BBA98B260ED9C600792BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA989260ED9C600792BF0 /* Main.storyboard */; };
+		01BBA98D260ED9C700792BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA98C260ED9C700792BF0 /* Assets.xcassets */; };
+		01BBA990260ED9C700792BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA98E260ED9C700792BF0 /* LaunchScreen.storyboard */; };
+		01BBA99B260ED9C700792BF0 /* HelloTekoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA99A260ED9C700792BF0 /* HelloTekoTests.swift */; };
+		01BBA9A6260ED9C700792BF0 /* HelloTekoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA9A5260ED9C700792BF0 /* HelloTekoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01BBA997260ED9C700792BF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01BBA978260ED9C600792BF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01BBA97F260ED9C600792BF0;
+			remoteInfo = HelloTeko;
+		};
+		01BBA9A2260ED9C700792BF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01BBA978260ED9C600792BF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01BBA97F260ED9C600792BF0;
+			remoteInfo = HelloTeko;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BBA980260ED9C600792BF0 /* HelloTeko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTeko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BBA983260ED9C600792BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01BBA985260ED9C600792BF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		01BBA987260ED9C600792BF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01BBA98A260ED9C600792BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01BBA98C260ED9C700792BF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01BBA98F260ED9C700792BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01BBA991260ED9C700792BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BBA996260ED9C700792BF0 /* HelloTekoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloTekoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BBA99A260ED9C700792BF0 /* HelloTekoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloTekoTests.swift; sourceTree = "<group>"; };
+		01BBA99C260ED9C700792BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BBA9A1260ED9C700792BF0 /* HelloTekoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloTekoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BBA9A5260ED9C700792BF0 /* HelloTekoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloTekoUITests.swift; sourceTree = "<group>"; };
+		01BBA9A7260ED9C700792BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01BBA97D260ED9C600792BF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBA993260ED9C700792BF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBA99E260ED9C700792BF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01BBA977260ED9C600792BF0 = {
+			isa = PBXGroup;
+			children = (
+				01BBA982260ED9C600792BF0 /* HelloTeko */,
+				01BBA999260ED9C700792BF0 /* HelloTekoTests */,
+				01BBA9A4260ED9C700792BF0 /* HelloTekoUITests */,
+				01BBA981260ED9C600792BF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01BBA981260ED9C600792BF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01BBA980260ED9C600792BF0 /* HelloTeko.app */,
+				01BBA996260ED9C700792BF0 /* HelloTekoTests.xctest */,
+				01BBA9A1260ED9C700792BF0 /* HelloTekoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01BBA982260ED9C600792BF0 /* HelloTeko */ = {
+			isa = PBXGroup;
+			children = (
+				01BBA983260ED9C600792BF0 /* AppDelegate.swift */,
+				01BBA985260ED9C600792BF0 /* SceneDelegate.swift */,
+				01BBA987260ED9C600792BF0 /* ViewController.swift */,
+				01BBA989260ED9C600792BF0 /* Main.storyboard */,
+				01BBA98C260ED9C700792BF0 /* Assets.xcassets */,
+				01BBA98E260ED9C700792BF0 /* LaunchScreen.storyboard */,
+				01BBA991260ED9C700792BF0 /* Info.plist */,
+			);
+			path = HelloTeko;
+			sourceTree = "<group>";
+		};
+		01BBA999260ED9C700792BF0 /* HelloTekoTests */ = {
+			isa = PBXGroup;
+			children = (
+				01BBA99A260ED9C700792BF0 /* HelloTekoTests.swift */,
+				01BBA99C260ED9C700792BF0 /* Info.plist */,
+			);
+			path = HelloTekoTests;
+			sourceTree = "<group>";
+		};
+		01BBA9A4260ED9C700792BF0 /* HelloTekoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01BBA9A5260ED9C700792BF0 /* HelloTekoUITests.swift */,
+				01BBA9A7260ED9C700792BF0 /* Info.plist */,
+			);
+			path = HelloTekoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01BBA97F260ED9C600792BF0 /* HelloTeko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BBA9AA260ED9C700792BF0 /* Build configuration list for PBXNativeTarget "HelloTeko" */;
+			buildPhases = (
+				01BBA97C260ED9C600792BF0 /* Sources */,
+				01BBA97D260ED9C600792BF0 /* Frameworks */,
+				01BBA97E260ED9C600792BF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloTeko;
+			productName = HelloTeko;
+			productReference = 01BBA980260ED9C600792BF0 /* HelloTeko.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01BBA995260ED9C700792BF0 /* HelloTekoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BBA9AD260ED9C700792BF0 /* Build configuration list for PBXNativeTarget "HelloTekoTests" */;
+			buildPhases = (
+				01BBA992260ED9C700792BF0 /* Sources */,
+				01BBA993260ED9C700792BF0 /* Frameworks */,
+				01BBA994260ED9C700792BF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01BBA998260ED9C700792BF0 /* PBXTargetDependency */,
+			);
+			name = HelloTekoTests;
+			productName = HelloTekoTests;
+			productReference = 01BBA996260ED9C700792BF0 /* HelloTekoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01BBA9A0260ED9C700792BF0 /* HelloTekoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BBA9B0260ED9C700792BF0 /* Build configuration list for PBXNativeTarget "HelloTekoUITests" */;
+			buildPhases = (
+				01BBA99D260ED9C700792BF0 /* Sources */,
+				01BBA99E260ED9C700792BF0 /* Frameworks */,
+				01BBA99F260ED9C700792BF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01BBA9A3260ED9C700792BF0 /* PBXTargetDependency */,
+			);
+			name = HelloTekoUITests;
+			productName = HelloTekoUITests;
+			productReference = 01BBA9A1260ED9C700792BF0 /* HelloTekoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01BBA978260ED9C600792BF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = thiennq;
+				TargetAttributes = {
+					01BBA97F260ED9C600792BF0 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					01BBA995260ED9C700792BF0 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 01BBA97F260ED9C600792BF0;
+					};
+					01BBA9A0260ED9C700792BF0 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 01BBA97F260ED9C600792BF0;
+					};
+				};
+			};
+			buildConfigurationList = 01BBA97B260ED9C600792BF0 /* Build configuration list for PBXProject "HelloTeko" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01BBA977260ED9C600792BF0;
+			productRefGroup = 01BBA981260ED9C600792BF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01BBA97F260ED9C600792BF0 /* HelloTeko */,
+				01BBA995260ED9C700792BF0 /* HelloTekoTests */,
+				01BBA9A0260ED9C700792BF0 /* HelloTekoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01BBA97E260ED9C600792BF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BBA990260ED9C700792BF0 /* LaunchScreen.storyboard in Resources */,
+				01BBA98D260ED9C700792BF0 /* Assets.xcassets in Resources */,
+				01BBA98B260ED9C600792BF0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBA994260ED9C700792BF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBA99F260ED9C700792BF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01BBA97C260ED9C600792BF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BBA988260ED9C600792BF0 /* ViewController.swift in Sources */,
+				01BBA984260ED9C600792BF0 /* AppDelegate.swift in Sources */,
+				01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBA992260ED9C700792BF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BBA99B260ED9C700792BF0 /* HelloTekoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBA99D260ED9C700792BF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BBA9A6260ED9C700792BF0 /* HelloTekoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01BBA998260ED9C700792BF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01BBA97F260ED9C600792BF0 /* HelloTeko */;
+			targetProxy = 01BBA997260ED9C700792BF0 /* PBXContainerItemProxy */;
+		};
+		01BBA9A3260ED9C700792BF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01BBA97F260ED9C600792BF0 /* HelloTeko */;
+			targetProxy = 01BBA9A2260ED9C700792BF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01BBA989260ED9C600792BF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01BBA98A260ED9C600792BF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01BBA98E260ED9C700792BF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01BBA98F260ED9C700792BF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01BBA9A8260ED9C700792BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01BBA9A9260ED9C700792BF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01BBA9AB260ED9C700792BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloTeko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thiennq.HelloTeko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01BBA9AC260ED9C700792BF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloTeko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thiennq.HelloTeko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01BBA9AE260ED9C700792BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloTekoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thiennq.HelloTekoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloTeko.app/HelloTeko";
+			};
+			name = Debug;
+		};
+		01BBA9AF260ED9C700792BF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloTekoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thiennq.HelloTekoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloTeko.app/HelloTeko";
+			};
+			name = Release;
+		};
+		01BBA9B1260ED9C700792BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloTekoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thiennq.HelloTekoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HelloTeko;
+			};
+			name = Debug;
+		};
+		01BBA9B2260ED9C700792BF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloTekoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thiennq.HelloTekoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HelloTeko;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01BBA97B260ED9C600792BF0 /* Build configuration list for PBXProject "HelloTeko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BBA9A8260ED9C700792BF0 /* Debug */,
+				01BBA9A9260ED9C700792BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01BBA9AA260ED9C700792BF0 /* Build configuration list for PBXNativeTarget "HelloTeko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BBA9AB260ED9C700792BF0 /* Debug */,
+				01BBA9AC260ED9C700792BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01BBA9AD260ED9C700792BF0 /* Build configuration list for PBXNativeTarget "HelloTekoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BBA9AE260ED9C700792BF0 /* Debug */,
+				01BBA9AF260ED9C700792BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01BBA9B0260ED9C700792BF0 /* Build configuration list for PBXNativeTarget "HelloTekoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BBA9B1260ED9C700792BF0 /* Debug */,
+				01BBA9B2260ED9C700792BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01BBA978260ED9C600792BF0 /* Project object */;
+}
