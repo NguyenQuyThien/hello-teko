@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		010598F0260EDE4700E0CE61 /* ProductListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */; };
 		010598F3260EE1CE00E0CE61 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598F2260EE1CD00E0CE61 /* R.generated.swift */; };
+		010598F7260EE69C00E0CE61 /* BaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598F6260EE69C00E0CE61 /* BaseExtensions.swift */; };
+		019DA35E260F2318002FD5B1 /* UIImageView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA35D260F2318002FD5B1 /* UIImageView+Additions.swift */; };
+		019DA360260F249C002FD5B1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA35F260F249C002FD5B1 /* Product.swift */; };
+		019DA363260F2A08002FD5B1 /* ProductListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA362260F2A08002FD5B1 /* ProductListingViewModel.swift */; };
+		019DA365260F47EE002FD5B1 /* HelloTekoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA364260F47EE002FD5B1 /* HelloTekoApi.swift */; };
+		019DA36C260F5F6B002FD5B1 /* SmartSearchMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA36B260F5F6B002FD5B1 /* SmartSearchMatcher.swift */; };
 		01BBA984260ED9C600792BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA983260ED9C600792BF0 /* AppDelegate.swift */; };
 		01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA985260ED9C600792BF0 /* SceneDelegate.swift */; };
 		01BBA98B260ED9C600792BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA989260ED9C600792BF0 /* Main.storyboard */; };
@@ -16,6 +22,10 @@
 		01BBA990260ED9C700792BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA98E260ED9C700792BF0 /* LaunchScreen.storyboard */; };
 		01BBA99B260ED9C700792BF0 /* HelloTekoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA99A260ED9C700792BF0 /* HelloTekoTests.swift */; };
 		01BBA9A6260ED9C700792BF0 /* HelloTekoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA9A5260ED9C700792BF0 /* HelloTekoUITests.swift */; };
+		01DFBA6A260F16C90017FB1C /* ProductListingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DFBA68260F16C90017FB1C /* ProductListingCollectionViewCell.swift */; };
+		01DFBA6B260F16C90017FB1C /* ProductListingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DFBA69260F16C90017FB1C /* ProductListingCollectionViewCell.xib */; };
+		01DFBA6D260F18D10017FB1C /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DFBA6C260F18D10017FB1C /* UIFont+Additions.swift */; };
+		01DFBA6F260F190F0017FB1C /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DFBA6E260F190E0017FB1C /* UIColor+Additions.swift */; };
 		270F1419082AB18D7BC80DEF /* Pods_HelloTeko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3469B9C436151CC81F946A65 /* Pods_HelloTeko.framework */; };
 		2C7C1C74DCB6772F4C9439F9 /* Pods_HelloTekoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3759CDAEDC8BC2BEC14B21B /* Pods_HelloTekoTests.framework */; };
 		7C9A0E53BB72688A270B209C /* Pods_HelloTeko_HelloTekoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113E20F87515261E95D485D /* Pods_HelloTeko_HelloTekoUITests.framework */; };
@@ -41,6 +51,12 @@
 /* Begin PBXFileReference section */
 		010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewController.swift; sourceTree = "<group>"; };
 		010598F2260EE1CD00E0CE61 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		010598F6260EE69C00E0CE61 /* BaseExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseExtensions.swift; sourceTree = "<group>"; };
+		019DA35D260F2318002FD5B1 /* UIImageView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Additions.swift"; sourceTree = "<group>"; };
+		019DA35F260F249C002FD5B1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		019DA362260F2A08002FD5B1 /* ProductListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewModel.swift; sourceTree = "<group>"; };
+		019DA364260F47EE002FD5B1 /* HelloTekoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloTekoApi.swift; sourceTree = "<group>"; };
+		019DA36B260F5F6B002FD5B1 /* SmartSearchMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSearchMatcher.swift; sourceTree = "<group>"; };
 		01BBA980260ED9C600792BF0 /* HelloTeko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTeko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BBA983260ED9C600792BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01BBA985260ED9C600792BF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +70,10 @@
 		01BBA9A1260ED9C700792BF0 /* HelloTekoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloTekoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BBA9A5260ED9C700792BF0 /* HelloTekoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloTekoUITests.swift; sourceTree = "<group>"; };
 		01BBA9A7260ED9C700792BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01DFBA68260F16C90017FB1C /* ProductListingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingCollectionViewCell.swift; sourceTree = "<group>"; };
+		01DFBA69260F16C90017FB1C /* ProductListingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListingCollectionViewCell.xib; sourceTree = "<group>"; };
+		01DFBA6C260F18D10017FB1C /* UIFont+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Additions.swift"; sourceTree = "<group>"; };
+		01DFBA6E260F190E0017FB1C /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 		02BB03B8870D15285F4B0C7C /* Pods-HelloTeko-HelloTekoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTeko-HelloTekoUITests.release.xcconfig"; path = "Target Support Files/Pods-HelloTeko-HelloTekoUITests/Pods-HelloTeko-HelloTekoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		08F3E989DD5610A06F15A9FF /* Pods-HelloTekoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTekoTests.debug.xcconfig"; path = "Target Support Files/Pods-HelloTekoTests/Pods-HelloTekoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3469B9C436151CC81F946A65 /* Pods_HelloTeko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTeko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +134,7 @@
 		010598E2260EDC2500E0CE61 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				019DA35F260F249C002FD5B1 /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +151,7 @@
 		010598E4260EDC5200E0CE61 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				019DA36B260F5F6B002FD5B1 /* SmartSearchMatcher.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -137,6 +159,7 @@
 		010598E5260EDC5E00E0CE61 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				019DA368260F56F7002FD5B1 /* Other */,
 				010598EE260EDDB700E0CE61 /* CollectionViewCells */,
 				010598ED260EDDAB00E0CE61 /* TableViewCells */,
 			);
@@ -146,6 +169,7 @@
 		010598E7260EDCC100E0CE61 /* ProductListing */ = {
 			isa = PBXGroup;
 			children = (
+				019DA361260F29EB002FD5B1 /* ViewModels */,
 				010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */,
 			);
 			path = ProductListing;
@@ -161,6 +185,9 @@
 		010598E9260EDD3800E0CE61 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				01DFBA6E260F190E0017FB1C /* UIColor+Additions.swift */,
+				01DFBA6C260F18D10017FB1C /* UIFont+Additions.swift */,
+				019DA35D260F2318002FD5B1 /* UIImageView+Additions.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -168,6 +195,7 @@
 		010598EA260EDD3D00E0CE61 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				010598F6260EE69C00E0CE61 /* BaseExtensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -183,6 +211,7 @@
 		010598EC260EDD7100E0CE61 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				019DA364260F47EE002FD5B1 /* HelloTekoApi.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -197,8 +226,25 @@
 		010598EE260EDDB700E0CE61 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				01DFBA68260F16C90017FB1C /* ProductListingCollectionViewCell.swift */,
+				01DFBA69260F16C90017FB1C /* ProductListingCollectionViewCell.xib */,
 			);
 			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		019DA361260F29EB002FD5B1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				019DA362260F2A08002FD5B1 /* ProductListingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		019DA368260F56F7002FD5B1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		01BBA977260ED9C600792BF0 = {
@@ -396,6 +442,7 @@
 				01BBA990260ED9C700792BF0 /* LaunchScreen.storyboard in Resources */,
 				01BBA98D260ED9C700792BF0 /* Assets.xcassets in Resources */,
 				01BBA98B260ED9C600792BF0 /* Main.storyboard in Resources */,
+				01DFBA6B260F16C90017FB1C /* ProductListingCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,9 +590,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				01BBA984260ED9C600792BF0 /* AppDelegate.swift in Sources */,
+				01DFBA6F260F190F0017FB1C /* UIColor+Additions.swift in Sources */,
+				01DFBA6A260F16C90017FB1C /* ProductListingCollectionViewCell.swift in Sources */,
+				019DA36C260F5F6B002FD5B1 /* SmartSearchMatcher.swift in Sources */,
+				010598F7260EE69C00E0CE61 /* BaseExtensions.swift in Sources */,
 				010598F0260EDE4700E0CE61 /* ProductListingViewController.swift in Sources */,
 				01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */,
+				019DA365260F47EE002FD5B1 /* HelloTekoApi.swift in Sources */,
+				019DA35E260F2318002FD5B1 /* UIImageView+Additions.swift in Sources */,
+				019DA360260F249C002FD5B1 /* Product.swift in Sources */,
+				019DA363260F2A08002FD5B1 /* ProductListingViewModel.swift in Sources */,
 				010598F3260EE1CE00E0CE61 /* R.generated.swift in Sources */,
+				01DFBA6D260F18D10017FB1C /* UIFont+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

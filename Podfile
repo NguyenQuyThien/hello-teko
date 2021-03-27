@@ -15,6 +15,7 @@ target 'HelloTeko' do
   pod 'UITextView+Placeholder'
   pod 'SnapKit'
   pod 'IQKeyboardManagerSwift'
+  pod 'SwiftyJSON'
   pod 'Kingfisher', '5.9.0'
 
   target 'HelloTekoTests' do
