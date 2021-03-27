@@ -3,18 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010598F0260EDE4700E0CE61 /* ProductListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */; };
+		010598F3260EE1CE00E0CE61 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598F2260EE1CD00E0CE61 /* R.generated.swift */; };
 		01BBA984260ED9C600792BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA983260ED9C600792BF0 /* AppDelegate.swift */; };
 		01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA985260ED9C600792BF0 /* SceneDelegate.swift */; };
-		01BBA988260ED9C600792BF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA987260ED9C600792BF0 /* ViewController.swift */; };
 		01BBA98B260ED9C600792BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA989260ED9C600792BF0 /* Main.storyboard */; };
 		01BBA98D260ED9C700792BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA98C260ED9C700792BF0 /* Assets.xcassets */; };
 		01BBA990260ED9C700792BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA98E260ED9C700792BF0 /* LaunchScreen.storyboard */; };
 		01BBA99B260ED9C700792BF0 /* HelloTekoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA99A260ED9C700792BF0 /* HelloTekoTests.swift */; };
 		01BBA9A6260ED9C700792BF0 /* HelloTekoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA9A5260ED9C700792BF0 /* HelloTekoUITests.swift */; };
+		270F1419082AB18D7BC80DEF /* Pods_HelloTeko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3469B9C436151CC81F946A65 /* Pods_HelloTeko.framework */; };
+		2C7C1C74DCB6772F4C9439F9 /* Pods_HelloTekoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3759CDAEDC8BC2BEC14B21B /* Pods_HelloTekoTests.framework */; };
+		7C9A0E53BB72688A270B209C /* Pods_HelloTeko_HelloTekoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113E20F87515261E95D485D /* Pods_HelloTeko_HelloTekoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewController.swift; sourceTree = "<group>"; };
+		010598F2260EE1CD00E0CE61 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		01BBA980260ED9C600792BF0 /* HelloTeko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTeko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BBA983260ED9C600792BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01BBA985260ED9C600792BF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		01BBA987260ED9C600792BF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01BBA98A260ED9C600792BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01BBA98C260ED9C700792BF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01BBA98F260ED9C700792BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,15 @@
 		01BBA9A1260ED9C700792BF0 /* HelloTekoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloTekoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BBA9A5260ED9C700792BF0 /* HelloTekoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloTekoUITests.swift; sourceTree = "<group>"; };
 		01BBA9A7260ED9C700792BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02BB03B8870D15285F4B0C7C /* Pods-HelloTeko-HelloTekoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTeko-HelloTekoUITests.release.xcconfig"; path = "Target Support Files/Pods-HelloTeko-HelloTekoUITests/Pods-HelloTeko-HelloTekoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		08F3E989DD5610A06F15A9FF /* Pods-HelloTekoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTekoTests.debug.xcconfig"; path = "Target Support Files/Pods-HelloTekoTests/Pods-HelloTekoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3469B9C436151CC81F946A65 /* Pods_HelloTeko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTeko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD1C122632547BE8D6D9026 /* Pods-HelloTekoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTekoTests.release.xcconfig"; path = "Target Support Files/Pods-HelloTekoTests/Pods-HelloTekoTests.release.xcconfig"; sourceTree = "<group>"; };
+		9813243940F7C18A438A8A79 /* Pods-HelloTeko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTeko.debug.xcconfig"; path = "Target Support Files/Pods-HelloTeko/Pods-HelloTeko.debug.xcconfig"; sourceTree = "<group>"; };
+		A3759CDAEDC8BC2BEC14B21B /* Pods_HelloTekoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTekoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE3A35C5DC043D486071E3C /* Pods-HelloTeko.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTeko.release.xcconfig"; path = "Target Support Files/Pods-HelloTeko/Pods-HelloTeko.release.xcconfig"; sourceTree = "<group>"; };
+		D113E20F87515261E95D485D /* Pods_HelloTeko_HelloTekoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTeko_HelloTekoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C42816F32D38A258D8B708 /* Pods-HelloTeko-HelloTekoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTeko-HelloTekoUITests.debug.xcconfig"; path = "Target Support Files/Pods-HelloTeko-HelloTekoUITests/Pods-HelloTeko-HelloTekoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270F1419082AB18D7BC80DEF /* Pods_HelloTeko.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7C1C74DCB6772F4C9439F9 /* Pods_HelloTekoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,121 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9A0E53BB72688A270B209C /* Pods_HelloTeko_HelloTekoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010598E0260EDC0200E0CE61 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				01BBA983260ED9C600792BF0 /* AppDelegate.swift */,
+				01BBA985260ED9C600792BF0 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		010598E1260EDC1900E0CE61 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				010598EA260EDD3D00E0CE61 /* Other */,
+				010598E9260EDD3800E0CE61 /* UI */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		010598E2260EDC2500E0CE61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		010598E3260EDC3A00E0CE61 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				010598E8260EDD0700E0CE61 /* ProductDetail */,
+				010598E7260EDCC100E0CE61 /* ProductListing */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		010598E4260EDC5200E0CE61 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		010598E5260EDC5E00E0CE61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				010598EE260EDDB700E0CE61 /* CollectionViewCells */,
+				010598ED260EDDAB00E0CE61 /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		010598E7260EDCC100E0CE61 /* ProductListing */ = {
+			isa = PBXGroup;
+			children = (
+				010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */,
+			);
+			path = ProductListing;
+			sourceTree = "<group>";
+		};
+		010598E8260EDD0700E0CE61 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		010598E9260EDD3800E0CE61 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		010598EA260EDD3D00E0CE61 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		010598EB260EDD4500E0CE61 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				01BBA98C260ED9C700792BF0 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		010598EC260EDD7100E0CE61 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		010598ED260EDDAB00E0CE61 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		010598EE260EDDB700E0CE61 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		01BBA977260ED9C600792BF0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +208,8 @@
 				01BBA999260ED9C700792BF0 /* HelloTekoTests */,
 				01BBA9A4260ED9C700792BF0 /* HelloTekoUITests */,
 				01BBA981260ED9C600792BF0 /* Products */,
+				9205A45F0F1B476B0B45A876 /* Pods */,
+				1F184364C06D67631C2A1B6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +226,17 @@
 		01BBA982260ED9C600792BF0 /* HelloTeko */ = {
 			isa = PBXGroup;
 			children = (
-				01BBA983260ED9C600792BF0 /* AppDelegate.swift */,
-				01BBA985260ED9C600792BF0 /* SceneDelegate.swift */,
-				01BBA987260ED9C600792BF0 /* ViewController.swift */,
+				010598E0260EDC0200E0CE61 /* AppDelegate */,
+				010598EB260EDD4500E0CE61 /* Assets */,
+				010598E1260EDC1900E0CE61 /* Extension */,
+				010598E2260EDC2500E0CE61 /* Models */,
+				010598EC260EDD7100E0CE61 /* Networking */,
+				010598E3260EDC3A00E0CE61 /* Scenes */,
+				010598E5260EDC5E00E0CE61 /* Views */,
+				010598E4260EDC5200E0CE61 /* Utils */,
 				01BBA989260ED9C600792BF0 /* Main.storyboard */,
-				01BBA98C260ED9C700792BF0 /* Assets.xcassets */,
 				01BBA98E260ED9C700792BF0 /* LaunchScreen.storyboard */,
+				010598F2260EE1CD00E0CE61 /* R.generated.swift */,
 				01BBA991260ED9C700792BF0 /* Info.plist */,
 			);
 			path = HelloTeko;
@@ -128,6 +260,29 @@
 			path = HelloTekoUITests;
 			sourceTree = "<group>";
 		};
+		1F184364C06D67631C2A1B6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3469B9C436151CC81F946A65 /* Pods_HelloTeko.framework */,
+				D113E20F87515261E95D485D /* Pods_HelloTeko_HelloTekoUITests.framework */,
+				A3759CDAEDC8BC2BEC14B21B /* Pods_HelloTekoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9205A45F0F1B476B0B45A876 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9813243940F7C18A438A8A79 /* Pods-HelloTeko.debug.xcconfig */,
+				AAE3A35C5DC043D486071E3C /* Pods-HelloTeko.release.xcconfig */,
+				D8C42816F32D38A258D8B708 /* Pods-HelloTeko-HelloTekoUITests.debug.xcconfig */,
+				02BB03B8870D15285F4B0C7C /* Pods-HelloTeko-HelloTekoUITests.release.xcconfig */,
+				08F3E989DD5610A06F15A9FF /* Pods-HelloTekoTests.debug.xcconfig */,
+				7FD1C122632547BE8D6D9026 /* Pods-HelloTekoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +290,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01BBA9AA260ED9C700792BF0 /* Build configuration list for PBXNativeTarget "HelloTeko" */;
 			buildPhases = (
+				DB587DC84F3C3286557CE1A8 /* [CP] Check Pods Manifest.lock */,
+				010598F1260EE11800E0CE61 /* ShellScript */,
 				01BBA97C260ED9C600792BF0 /* Sources */,
 				01BBA97D260ED9C600792BF0 /* Frameworks */,
 				01BBA97E260ED9C600792BF0 /* Resources */,
+				7C0AD7761E29DB178502DE79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +310,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01BBA9AD260ED9C700792BF0 /* Build configuration list for PBXNativeTarget "HelloTekoTests" */;
 			buildPhases = (
+				6D4680424F8C968227F2D163 /* [CP] Check Pods Manifest.lock */,
 				01BBA992260ED9C700792BF0 /* Sources */,
 				01BBA993260ED9C700792BF0 /* Frameworks */,
 				01BBA994260ED9C700792BF0 /* Resources */,
@@ -170,9 +329,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01BBA9B0260ED9C700792BF0 /* Build configuration list for PBXNativeTarget "HelloTekoUITests" */;
 			buildPhases = (
+				CAC6B75D2873DC88A56C195C /* [CP] Check Pods Manifest.lock */,
 				01BBA99D260ED9C700792BF0 /* Sources */,
 				01BBA99E260ED9C700792BF0 /* Frameworks */,
 				01BBA99F260ED9C700792BF0 /* Resources */,
+				F6A3DBF6E7DBC0FEECAE3969 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,14 +415,137 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		010598F1260EE11800E0CE61 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		6D4680424F8C968227F2D163 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloTekoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C0AD7761E29DB178502DE79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloTeko/Pods-HelloTeko-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloTeko/Pods-HelloTeko-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloTeko/Pods-HelloTeko-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAC6B75D2873DC88A56C195C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloTeko-HelloTekoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB587DC84F3C3286557CE1A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloTeko-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A3DBF6E7DBC0FEECAE3969 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloTeko-HelloTekoUITests/Pods-HelloTeko-HelloTekoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloTeko-HelloTekoUITests/Pods-HelloTeko-HelloTekoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloTeko-HelloTekoUITests/Pods-HelloTeko-HelloTekoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		01BBA97C260ED9C600792BF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01BBA988260ED9C600792BF0 /* ViewController.swift in Sources */,
 				01BBA984260ED9C600792BF0 /* AppDelegate.swift in Sources */,
+				010598F0260EDE4700E0CE61 /* ProductListingViewController.swift in Sources */,
 				01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */,
+				010598F3260EE1CE00E0CE61 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,10 +716,12 @@
 		};
 		01BBA9AB260ED9C700792BF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9813243940F7C18A438A8A79 /* Pods-HelloTeko.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HelloTeko/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,10 +735,12 @@
 		};
 		01BBA9AC260ED9C700792BF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE3A35C5DC043D486071E3C /* Pods-HelloTeko.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HelloTeko/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +754,7 @@
 		};
 		01BBA9AE260ED9C700792BF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08F3E989DD5610A06F15A9FF /* Pods-HelloTekoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +776,7 @@
 		};
 		01BBA9AF260ED9C700792BF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD1C122632547BE8D6D9026 /* Pods-HelloTekoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +798,7 @@
 		};
 		01BBA9B1260ED9C700792BF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C42816F32D38A258D8B708 /* Pods-HelloTeko-HelloTekoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +818,7 @@
 		};
 		01BBA9B2260ED9C700792BF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02BB03B8870D15285F4B0C7C /* Pods-HelloTeko-HelloTekoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

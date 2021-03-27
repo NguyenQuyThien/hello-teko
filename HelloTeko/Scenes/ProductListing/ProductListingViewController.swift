@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ProductListingViewController.swift
 //  HelloTeko
 //
 //  Created by thien on 3/27/21.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ProductListingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
-
 }
-

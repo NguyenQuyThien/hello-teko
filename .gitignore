@@ -1,0 +1,10 @@
+.DS_Store
+# Xcode
+#
+xcuserdata
+*.xccheckout
+*.ipa
+*.xcuserstate
+xcshareddata
+R.generated.swift
+Pods/
