@@ -15,18 +15,14 @@ class HardwareDetailTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        lblTitle.textColor = .coolGrey
+        lblDetail.textColor = .darkGrey
+        lblDetail.font = .textStyle
     }
 
     func bind(model: HardwareDetail) {
         lblDetail.text = model.detail
         lblTitle.text = model.title
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
 }

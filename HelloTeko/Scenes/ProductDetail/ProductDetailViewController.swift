@@ -24,32 +24,60 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var lblProuctCodeLabel: UILabel!
     @IBOutlet weak var lblProductCode: UILabel!
     
-    @IBOutlet var expandPagingView: NSLayoutConstraint!
+    @IBOutlet var pagingViewHeightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var collectionViewOfSameItems: UICollectionView!
+    
+    @IBOutlet weak var gradientBackgroundAddToCartBtn: UIView!
+    @IBOutlet weak var btbRemoveItems: UIButton!
+    @IBOutlet weak var lblTotalItems: UIButton!
+    @IBOutlet weak var btbAddItems: UIButton!
+    @IBOutlet weak var lblTotalPrice: UILabel!
+    @IBOutlet weak var btnAddItemsToCart: UIButton!
     
     private let disposeBag = DisposeBag()
+    var product: Product!
     
     var menuViewController: PagingMenuViewController!
     var contentViewController: PagingContentViewController!
     private let menuCellIndentifier = "MenuCell"
-    static var viewController: (UIColor) -> HardwareDetailsViewController = { (color) in
+    
+    private static var mockTabBarView: (UIColor) -> HardwareDetailsViewController = { (color) in
         let vc = R.storyboard.pagingContent.hardwareDetailsViewController()!
         vc.view.backgroundColor = color
         vc.container.isHidden = color == .white ? false : true
         return vc
     }
+    private let mockTabBars: [HardwareDetailsViewController] = [mockTabBarView(.green), mockTabBarView(.white), mockTabBarView(.yellow)]
+    private lazy var dataSource = [(menuTitle: mockTitleTabBar.descriptionTitle.rawValue, vc: mockTabBars[0]),
+                                   (menuTitle: mockTitleTabBar.hardwareTitle.rawValue, vc: mockTabBars[1]),
+                                   (menuTitle: mockTitleTabBar.priceTitle.rawValue, vc: mockTabBars[2])]
     
-    var dataSource = [(menuTitle: "Mô tả sản phẩm", vc: viewController(.red)), (menuTitle: "Thông số kỹ thuật", vc: viewController(.white)), (menuTitle: "So sánh giá", vc: viewController(.yellow))]
+    private let viewModel = ProductDetailViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         setupTap()
-        
-        expandPagingView.constant = UIScreen.width / 375 * 238
-//            UIScreen.width / 375 * 238
     }
 
     private func setupUI() {
+        // expand or collapse paging view
+        dataSource[1].vc.isShowMoreInfo = { [weak self] isShowMoreInfomation in
+            guard let weakSelf = self else {
+                return
+            }
+            if isShowMoreInfomation {
+                let magicNumber: CGFloat = 82 // height menu cell paging view + table view content pading
+                weakSelf.pagingViewHeightConstraint.constant =  weakSelf.dataSource[1].vc.getTableViewContentHeight() + magicNumber
+            } else {
+                weakSelf.pagingViewHeightConstraint.constant = UIScreen.width / 375 * 238
+            }
+            weakSelf.view.layoutIfNeeded()
+        }
+        
+        gradientBackgroundAddToCartBtn.applyGradient(colours: [.tomatoTwo, .reddishOrange], locations: [0.0, 0.85, 1.0])
+        
         menuViewController.register(nib: UINib(resource: R.nib.menuCell), forCellWithReuseIdentifier: menuCellIndentifier)
         menuViewController.registerFocusView(nib: UINib(resource: R.nib.menuCellFocusView))
         menuViewController.reloadData()
@@ -103,7 +131,7 @@ extension ProductDetailViewController: PagingContentViewControllerDataSource {
     }
 }
 
-// MARK: - synchronize user interactions between Menu and Content
+// MARK: - synchronize user interactions between Menu and Content (paging view)
 extension ProductDetailViewController: PagingMenuViewControllerDelegate {
     func menuViewController(viewController: PagingMenuViewController, didSelect page: Int, previousPage: Int) {
         contentViewController.scroll(to: page, animated: true)
@@ -113,4 +141,10 @@ extension ProductDetailViewController: PagingContentViewControllerDelegate {
     func contentViewController(viewController: PagingContentViewController, didManualScrollOn index: Int, percent: CGFloat) {
         menuViewController.scroll(index: index, percent: percent, animated: false)
     }
+}
+// MARK: - Mock data for paging view
+enum mockTitleTabBar: String {
+    case descriptionTitle = "Mô tả sản phẩm"
+    case hardwareTitle = "Thông số kỹ thuật"
+    case priceTitle = "So sánh giá"
 }

@@ -40,9 +40,9 @@ class ProductListingViewController: UIViewController {
         collectionView.rx
             .modelSelected(Product.self)
             .subscribe(onNext: { [weak self] (model) in
-            print(model)
                 guard let weakSelf = self else {return}
                 let vc = R.storyboard.main.productDetailViewController()!
+                vc.product = model
                 weakSelf.navigationController?.pushViewController(vc, animated: true)
         }).disposed(by: disposeBag)
     }

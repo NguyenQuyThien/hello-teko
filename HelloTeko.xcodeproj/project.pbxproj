@@ -18,10 +18,11 @@
 		0128B8E22610420C00979172 /* HardwareDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0128B8E12610420C00979172 /* HardwareDetailsViewController.swift */; };
 		0128B8E52610461300979172 /* HardwareDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0128B8E32610461300979172 /* HardwareDetailTableViewCell.swift */; };
 		0128B8E62610461300979172 /* HardwareDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0128B8E42610461300979172 /* HardwareDetailTableViewCell.xib */; };
+		0163F46326106880002A4F9E /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163F46226106880002A4F9E /* UIView+Additions.swift */; };
+		0163F46626107818002A4F9E /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163F46526107818002A4F9E /* ProductDetailViewModel.swift */; };
 		019DA35E260F2318002FD5B1 /* UIImageView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA35D260F2318002FD5B1 /* UIImageView+Additions.swift */; };
 		019DA360260F249C002FD5B1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA35F260F249C002FD5B1 /* Product.swift */; };
 		019DA363260F2A08002FD5B1 /* ProductListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA362260F2A08002FD5B1 /* ProductListingViewModel.swift */; };
-		019DA365260F47EE002FD5B1 /* HelloTekoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA364260F47EE002FD5B1 /* HelloTekoApi.swift */; };
 		019DA36C260F5F6B002FD5B1 /* SmartSearchMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA36B260F5F6B002FD5B1 /* SmartSearchMatcher.swift */; };
 		01BBA984260ED9C600792BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA983260ED9C600792BF0 /* AppDelegate.swift */; };
 		01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA985260ED9C600792BF0 /* SceneDelegate.swift */; };
@@ -68,10 +69,11 @@
 		0128B8E12610420C00979172 /* HardwareDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailsViewController.swift; sourceTree = "<group>"; };
 		0128B8E32610461300979172 /* HardwareDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailTableViewCell.swift; sourceTree = "<group>"; };
 		0128B8E42610461300979172 /* HardwareDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HardwareDetailTableViewCell.xib; sourceTree = "<group>"; };
+		0163F46226106880002A4F9E /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		0163F46526107818002A4F9E /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 		019DA35D260F2318002FD5B1 /* UIImageView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Additions.swift"; sourceTree = "<group>"; };
 		019DA35F260F249C002FD5B1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		019DA362260F2A08002FD5B1 /* ProductListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewModel.swift; sourceTree = "<group>"; };
-		019DA364260F47EE002FD5B1 /* HelloTekoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloTekoApi.swift; sourceTree = "<group>"; };
 		019DA36B260F5F6B002FD5B1 /* SmartSearchMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSearchMatcher.swift; sourceTree = "<group>"; };
 		01BBA980260ED9C600792BF0 /* HelloTeko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTeko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BBA983260ED9C600792BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,7 +187,7 @@
 		010598E7260EDCC100E0CE61 /* ProductListing */ = {
 			isa = PBXGroup;
 			children = (
-				019DA361260F29EB002FD5B1 /* ViewModels */,
+				019DA361260F29EB002FD5B1 /* ViewModel */,
 				010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */,
 			);
 			path = ProductListing;
@@ -194,6 +196,7 @@
 		010598E8260EDD0700E0CE61 /* ProductDetail */ = {
 			isa = PBXGroup;
 			children = (
+				0163F464261077EB002A4F9E /* ViewModel */,
 				0111E5F6261028B900F67650 /* ProductDetailViewController.swift */,
 			);
 			path = ProductDetail;
@@ -205,6 +208,7 @@
 				01DFBA6E260F190E0017FB1C /* UIColor+Additions.swift */,
 				01DFBA6C260F18D10017FB1C /* UIFont+Additions.swift */,
 				019DA35D260F2318002FD5B1 /* UIImageView+Additions.swift */,
+				0163F46226106880002A4F9E /* UIView+Additions.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -228,7 +232,6 @@
 		010598EC260EDD7100E0CE61 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				019DA364260F47EE002FD5B1 /* HelloTekoApi.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -264,18 +267,34 @@
 		0128B8DE26103F7A00979172 /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				0128B8DF26103FEA00979172 /* PagingContent.storyboard */,
+				0163F46726107A43002A4F9E /* Storyboard */,
 				0128B8E12610420C00979172 /* HardwareDetailsViewController.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
 		};
-		019DA361260F29EB002FD5B1 /* ViewModels */ = {
+		0163F464261077EB002A4F9E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0163F46526107818002A4F9E /* ProductDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0163F46726107A43002A4F9E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0128B8DF26103FEA00979172 /* PagingContent.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		019DA361260F29EB002FD5B1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				019DA362260F2A08002FD5B1 /* ProductListingViewModel.swift */,
 			);
-			path = ViewModels;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		019DA368260F56F7002FD5B1 /* PageView */ = {
@@ -641,15 +660,16 @@
 				010598F7260EE69C00E0CE61 /* BaseExtensions.swift in Sources */,
 				010598F0260EDE4700E0CE61 /* ProductListingViewController.swift in Sources */,
 				01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */,
-				019DA365260F47EE002FD5B1 /* HelloTekoApi.swift in Sources */,
 				019DA35E260F2318002FD5B1 /* UIImageView+Additions.swift in Sources */,
 				0128B8E22610420C00979172 /* HardwareDetailsViewController.swift in Sources */,
 				0111E5F7261028B900F67650 /* ProductDetailViewController.swift in Sources */,
+				0163F46326106880002A4F9E /* UIView+Additions.swift in Sources */,
 				019DA360260F249C002FD5B1 /* Product.swift in Sources */,
 				0111E5F92610307600F67650 /* MenuCell.swift in Sources */,
 				019DA363260F2A08002FD5B1 /* ProductListingViewModel.swift in Sources */,
 				010598F3260EE1CE00E0CE61 /* R.generated.swift in Sources */,
 				01DFBA6D260F18D10017FB1C /* UIFont+Additions.swift in Sources */,
+				0163F46626107818002A4F9E /* ProductDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

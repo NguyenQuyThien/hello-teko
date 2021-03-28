@@ -17,12 +17,12 @@ extension UIImageView {
              .cacheOriginalImage] : nil
         kf.setImage(with: url, placeholder: R.image.imagePlaceholder(),
                     options: options, completionHandler:  { result in
-            switch result {
-            case .success(let value):
-                completion?(value.image)
-            case .failure(_):
-                completion?(nil)
-            }
+                        switch result {
+                        case .success(let value):
+                            completion?(value.image)
+                        case .failure(_):
+                            completion?(nil)
+                        }
         })
     }
     
