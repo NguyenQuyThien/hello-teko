@@ -12,7 +12,7 @@ import RxCocoa
 import RxSwift
 
 class ProductDetailViewController: UIViewController {
-
+    // MARK: - Properties
     @IBOutlet weak var btnBackLeftBarButton: UIButton!
     @IBOutlet weak var lblTitleProductName: UILabel!
     @IBOutlet weak var lblTitleProductPrice: UILabel!
@@ -23,6 +23,7 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var lblDetailProductName: UILabel!
     @IBOutlet weak var lblProuctCodeLabel: UILabel!
     @IBOutlet weak var lblProductCode: UILabel!
+    @IBOutlet weak var lblDetailProductPrice: UILabel!
     
     @IBOutlet var pagingViewHeightConstraint: NSLayoutConstraint!
     
@@ -55,13 +56,33 @@ class ProductDetailViewController: UIViewController {
     
     private let viewModel = ProductDetailViewModel()
     
+    private lazy var flowLayout: UICollectionViewFlowLayout = {
+        let layout = UICollectionViewFlowLayout()
+        let width = collectionViewOfSameItems.frame.size.width / 375 * 150
+        let height = collectionViewOfSameItems.frame.size.height
+        layout.itemSize = CGSize(width: width, height: height)
+        layout.minimumLineSpacing = 12
+        layout.scrollDirection = .horizontal
+        return layout
+    }()
+      
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupCollectionView()
         setupTap()
+        setupViewModel()
     }
 
     private func setupUI() {
+        lblTitleProductName.text = product.name
+        lblTitleProductName.font = .textStyle3
+        lblTitleProductPrice.text = String(product.price.toVND.formattedWithSeparatorVND)
+        imgProduct.setImage(url: URL(string: product.imageURL), getThumbnailImage: true, completion: nil)
+        lblDetailProductName.text = product.name
+        lblDetailProductPrice.attributedText = String(product.price.toVND.formattedWithSeparatorVND).setVNDAsSuperscript()
+        
         // expand or collapse paging view
         dataSource[1].vc.isShowMoreInfo = { [weak self] isShowMoreInfomation in
             guard let weakSelf = self else {
@@ -84,11 +105,30 @@ class ProductDetailViewController: UIViewController {
         contentViewController.reloadData()
     }
     
+    private func setupCollectionView() {
+        collectionViewOfSameItems.setCollectionViewLayout(flowLayout, animated: true)
+        collectionViewOfSameItems.register(R.nib.horizontalProductListingCollectionViewCell)
+    }
+    
     private func setupTap() {
         btnBackLeftBarButton.rx.tap.bind { [unowned self] in
             self.navigationController?.popViewController(animated: true)
         }.disposed(by: disposeBag)
     }
+    
+    private func setupViewModel() {
+        viewModel.sameProducts
+            .observe(on: MainScheduler.instance)
+            .bind(to: collectionViewOfSameItems.rx.items(
+                cellIdentifier: R.reuseIdentifier.horizontalProductListingCollectionViewCell.identifier,
+                cellType: HorizontalProductListingCollectionViewCell.self)
+            ){ (item: Int, data: Product, cell: HorizontalProductListingCollectionViewCell) in
+                cell.bindUI(model: data)
+        }.disposed(by: disposeBag)
+        
+        viewModel.getSameProducts(id: product.id)
+    }
+    
     // MARK: - Config for PagingMenu
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? PagingMenuViewController {

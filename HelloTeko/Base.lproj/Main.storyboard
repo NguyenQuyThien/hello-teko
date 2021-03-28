@@ -173,14 +173,17 @@
                                                                 </state>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bộ vi xử lý/ CPU Core I7..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOY-Zc-t9M">
-                                                                <rect key="frame" x="127.5" y="6" width="159.5" height="16"/>
+                                                                <rect key="frame" x="127.5" y="10" width="159.5" height="16"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="159.5" id="FQ9-bV-b0g"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.420.000 đ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrT-NM-wAg">
-                                                                <rect key="frame" x="165" y="36" width="84" height="16"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                                                <rect key="frame" x="159.5" y="34" width="95.5" height="18"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                 <color key="textColor" red="0.91445297000000003" green="0.24436268210000001" blue="0.28038811679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -206,7 +209,7 @@
                                                             <constraint firstItem="wun-lX-ZbV" firstAttribute="top" secondItem="moF-LU-qS4" secondAttribute="top" constant="10.5" id="8Zg-Sr-hZb"/>
                                                             <constraint firstItem="wun-lX-ZbV" firstAttribute="trailing" secondItem="6UO-ZQ-KKr" secondAttribute="trailing" id="ApY-xJ-Mpy"/>
                                                             <constraint firstItem="6UO-ZQ-KKr" firstAttribute="centerY" secondItem="moF-LU-qS4" secondAttribute="centerY" constant="2" id="EqG-RF-Nqr"/>
-                                                            <constraint firstItem="SOY-Zc-t9M" firstAttribute="top" secondItem="moF-LU-qS4" secondAttribute="top" constant="6" id="Mdi-Pc-UdH"/>
+                                                            <constraint firstItem="SOY-Zc-t9M" firstAttribute="top" secondItem="moF-LU-qS4" secondAttribute="top" constant="10" id="Mdi-Pc-UdH"/>
                                                             <constraint firstItem="mrT-NM-wAg" firstAttribute="centerX" secondItem="SOY-Zc-t9M" secondAttribute="centerX" id="REJ-R1-ItW"/>
                                                             <constraint firstItem="LsN-wR-Rq5" firstAttribute="leading" secondItem="moF-LU-qS4" secondAttribute="leading" constant="12" id="Uv2-ws-XXw"/>
                                                             <constraint firstAttribute="bottom" secondItem="mrT-NM-wAg" secondAttribute="bottom" constant="6" id="V54-uK-znT"/>
@@ -225,8 +228,8 @@
                                                             <constraint firstAttribute="height" constant="1" id="4Em-c1-ws8"/>
                                                         </constraints>
                                                     </view>
-                                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-ch-VAe">
-                                                        <rect key="frame" x="187.5" y="369" width="39" height="37"/>
+                                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="1" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-ch-VAe">
+                                                        <rect key="frame" x="203.5" y="369" width="7" height="37"/>
                                                         <color key="pageIndicatorTintColor" red="0.93376833199999998" green="0.94637221100000002" blue="0.95512396099999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="currentPageIndicatorTintColor" red="0.91445297000000003" green="0.24436268210000001" blue="0.28038811679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </pageControl>
@@ -368,10 +371,10 @@
                                                                         <color key="textColor" red="0.55846953389999998" green="0.58539164070000005" blue="0.59701716900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HXv-3a-ZHr">
-                                                                        <rect key="frame" x="12" y="44" width="390" height="255.5"/>
+                                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HXv-3a-ZHr">
+                                                                        <rect key="frame" x="12" y="36" width="390" height="267.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2Wp-s7-bi7">
+                                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2Wp-s7-bi7">
                                                                             <size key="itemSize" width="128" height="128"/>
                                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -383,9 +386,9 @@
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Tz-iN-YHx" secondAttribute="trailing" constant="20" symbolic="YES" id="3Zx-tr-015"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="HXv-3a-ZHr" secondAttribute="bottom" constant="12" id="Atm-kQ-ja2"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="HXv-3a-ZHr" secondAttribute="bottom" constant="8" id="Atm-kQ-ja2"/>
                                                                     <constraint firstItem="2Tz-iN-YHx" firstAttribute="leading" secondItem="EYM-3X-Acz" secondAttribute="leading" constant="12" id="PFe-hT-4d2"/>
-                                                                    <constraint firstItem="HXv-3a-ZHr" firstAttribute="top" secondItem="2Tz-iN-YHx" secondAttribute="bottom" constant="16" id="cGj-yF-KQt"/>
+                                                                    <constraint firstItem="HXv-3a-ZHr" firstAttribute="top" secondItem="2Tz-iN-YHx" secondAttribute="bottom" constant="8" id="cGj-yF-KQt"/>
                                                                     <constraint firstAttribute="width" secondItem="EYM-3X-Acz" secondAttribute="height" multiplier="375:282" id="fVR-Ld-rPl"/>
                                                                     <constraint firstItem="2Tz-iN-YHx" firstAttribute="top" secondItem="EYM-3X-Acz" secondAttribute="top" constant="12" id="k2s-IQ-pX0"/>
                                                                     <constraint firstAttribute="trailing" secondItem="HXv-3a-ZHr" secondAttribute="trailing" constant="12" id="wbO-ox-Hjs"/>
@@ -405,8 +408,8 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.840.000 đ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-yE-xej">
-                                                                        <rect key="frame" x="294" y="24" width="92" height="22"/>
-                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                                        <rect key="frame" x="288.5" y="24" width="97.5" height="22"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -447,7 +450,7 @@
                                                                                     </button>
                                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vne-56-qON">
                                                                                         <rect key="frame" x="40" y="0.0" width="40" height="48"/>
-                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                         <state key="normal" title="0">
                                                                                             <color key="titleColor" red="0.14590838549999999" green="0.1568776965" blue="0.15969952940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                         </state>
@@ -548,6 +551,7 @@
                         <outlet property="gradientBackgroundAddToCartBtn" destination="L5r-oM-fo3" id="Nhf-CK-5ak"/>
                         <outlet property="imgProduct" destination="IkX-CF-Nho" id="2lv-vF-oRe"/>
                         <outlet property="lblDetailProductName" destination="iOR-zr-sZ2" id="hzN-Gt-bxr"/>
+                        <outlet property="lblDetailProductPrice" destination="jXY-kU-BmT" id="xel-sH-P0c"/>
                         <outlet property="lblNumberItemsInCart" destination="wun-lX-ZbV" id="xDp-Zh-rti"/>
                         <outlet property="lblProductCode" destination="pds-2n-QhB" id="edu-4B-g6P"/>
                         <outlet property="lblProuctCodeLabel" destination="cPm-Q1-GhO" id="mXb-j3-O72"/>

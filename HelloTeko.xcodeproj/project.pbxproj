@@ -20,6 +20,8 @@
 		0128B8E62610461300979172 /* HardwareDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0128B8E42610461300979172 /* HardwareDetailTableViewCell.xib */; };
 		0163F46326106880002A4F9E /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163F46226106880002A4F9E /* UIView+Additions.swift */; };
 		0163F46626107818002A4F9E /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163F46526107818002A4F9E /* ProductDetailViewModel.swift */; };
+		0163F46A2610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163F4682610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.swift */; };
+		0163F46B2610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0163F4692610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.xib */; };
 		019DA35E260F2318002FD5B1 /* UIImageView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA35D260F2318002FD5B1 /* UIImageView+Additions.swift */; };
 		019DA360260F249C002FD5B1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA35F260F249C002FD5B1 /* Product.swift */; };
 		019DA363260F2A08002FD5B1 /* ProductListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA362260F2A08002FD5B1 /* ProductListingViewModel.swift */; };
@@ -35,6 +37,7 @@
 		01DFBA6B260F16C90017FB1C /* ProductListingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DFBA69260F16C90017FB1C /* ProductListingCollectionViewCell.xib */; };
 		01DFBA6D260F18D10017FB1C /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DFBA6C260F18D10017FB1C /* UIFont+Additions.swift */; };
 		01DFBA6F260F190F0017FB1C /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DFBA6E260F190E0017FB1C /* UIColor+Additions.swift */; };
+		01EA83DD2610C79D00D69F21 /* VND+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA83DC2610C79D00D69F21 /* VND+Formatter.swift */; };
 		270F1419082AB18D7BC80DEF /* Pods_HelloTeko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3469B9C436151CC81F946A65 /* Pods_HelloTeko.framework */; };
 		2C7C1C74DCB6772F4C9439F9 /* Pods_HelloTekoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3759CDAEDC8BC2BEC14B21B /* Pods_HelloTekoTests.framework */; };
 		7C9A0E53BB72688A270B209C /* Pods_HelloTeko_HelloTekoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113E20F87515261E95D485D /* Pods_HelloTeko_HelloTekoUITests.framework */; };
@@ -71,6 +74,8 @@
 		0128B8E42610461300979172 /* HardwareDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HardwareDetailTableViewCell.xib; sourceTree = "<group>"; };
 		0163F46226106880002A4F9E /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
 		0163F46526107818002A4F9E /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		0163F4682610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalProductListingCollectionViewCell.swift; sourceTree = "<group>"; };
+		0163F4692610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalProductListingCollectionViewCell.xib; sourceTree = "<group>"; };
 		019DA35D260F2318002FD5B1 /* UIImageView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Additions.swift"; sourceTree = "<group>"; };
 		019DA35F260F249C002FD5B1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		019DA362260F2A08002FD5B1 /* ProductListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewModel.swift; sourceTree = "<group>"; };
@@ -92,6 +97,7 @@
 		01DFBA69260F16C90017FB1C /* ProductListingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListingCollectionViewCell.xib; sourceTree = "<group>"; };
 		01DFBA6C260F18D10017FB1C /* UIFont+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Additions.swift"; sourceTree = "<group>"; };
 		01DFBA6E260F190E0017FB1C /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		01EA83DC2610C79D00D69F21 /* VND+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VND+Formatter.swift"; sourceTree = "<group>"; };
 		02BB03B8870D15285F4B0C7C /* Pods-HelloTeko-HelloTekoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTeko-HelloTekoUITests.release.xcconfig"; path = "Target Support Files/Pods-HelloTeko-HelloTekoUITests/Pods-HelloTeko-HelloTekoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		08F3E989DD5610A06F15A9FF /* Pods-HelloTekoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTekoTests.debug.xcconfig"; path = "Target Support Files/Pods-HelloTekoTests/Pods-HelloTekoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3469B9C436151CC81F946A65 /* Pods_HelloTeko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTeko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				010598F6260EE69C00E0CE61 /* BaseExtensions.swift */,
+				01EA83DC2610C79D00D69F21 /* VND+Formatter.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -250,6 +257,8 @@
 			children = (
 				01DFBA68260F16C90017FB1C /* ProductListingCollectionViewCell.swift */,
 				01DFBA69260F16C90017FB1C /* ProductListingCollectionViewCell.xib */,
+				0163F4682610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.swift */,
+				0163F4692610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.xib */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -498,6 +507,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0163F46B2610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.xib in Resources */,
 				0128B8E026103FEA00979172 /* PagingContent.storyboard in Resources */,
 				01BBA990260ED9C700792BF0 /* LaunchScreen.storyboard in Resources */,
 				01BBA98D260ED9C700792BF0 /* Assets.xcassets in Resources */,
@@ -654,10 +664,12 @@
 			files = (
 				01BBA984260ED9C600792BF0 /* AppDelegate.swift in Sources */,
 				0128B8E52610461300979172 /* HardwareDetailTableViewCell.swift in Sources */,
+				01EA83DD2610C79D00D69F21 /* VND+Formatter.swift in Sources */,
 				01DFBA6F260F190F0017FB1C /* UIColor+Additions.swift in Sources */,
 				01DFBA6A260F16C90017FB1C /* ProductListingCollectionViewCell.swift in Sources */,
 				019DA36C260F5F6B002FD5B1 /* SmartSearchMatcher.swift in Sources */,
 				010598F7260EE69C00E0CE61 /* BaseExtensions.swift in Sources */,
+				0163F46A2610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.swift in Sources */,
 				010598F0260EDE4700E0CE61 /* ProductListingViewController.swift in Sources */,
 				01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */,
 				019DA35E260F2318002FD5B1 /* UIImageView+Additions.swift in Sources */,
