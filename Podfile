@@ -17,6 +17,7 @@ target 'HelloTeko' do
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftyJSON'
   pod 'Kingfisher', '5.9.0'
+  pod 'PagingKit', '1.15.0'
 
   target 'HelloTekoTests' do
     inherit! :search_paths

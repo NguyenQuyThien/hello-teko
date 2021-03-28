@@ -37,6 +37,14 @@ class ProductListingViewController: UIViewController {
     private func setupCollectionView() {
         collectionView.setCollectionViewLayout(flowLayout, animated: true)
         collectionView.register(R.nib.productListingCollectionViewCell)
+        collectionView.rx
+            .modelSelected(Product.self)
+            .subscribe(onNext: { [weak self] (model) in
+            print(model)
+                guard let weakSelf = self else {return}
+                let vc = R.storyboard.main.productDetailViewController()!
+                weakSelf.navigationController?.pushViewController(vc, animated: true)
+        }).disposed(by: disposeBag)
     }
     
     private func setupViewModel() {

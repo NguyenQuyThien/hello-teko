@@ -4,6 +4,7 @@ PODS:
   - Kingfisher (5.9.0):
     - Kingfisher/Core (= 5.9.0)
   - Kingfisher/Core (5.9.0)
+  - PagingKit (1.15.0)
   - R.swift (5.4.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
@@ -23,6 +24,7 @@ DEPENDENCIES:
   - Alamofire
   - IQKeyboardManagerSwift
   - Kingfisher (= 5.9.0)
+  - PagingKit (= 1.15.0)
   - R.swift
   - RxCocoa
   - RxSwift
@@ -37,6 +39,7 @@ SPEC REPOS:
     - Alamofire
     - IQKeyboardManagerSwift
     - Kingfisher
+    - PagingKit
     - R.swift
     - R.swift.Library
     - RxCocoa
@@ -52,6 +55,7 @@ SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: ff98240aebb7302bdc4f1ecd701761030ce18b16
+  PagingKit: 4bd58b65d71a82ab98486b6927e870c7fbc6c6eb
   R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
@@ -63,6 +67,6 @@ SPEC CHECKSUMS:
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
   "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: 619886e6174e0c9ef1580e3a51f85f9ab12e978d
+PODFILE CHECKSUM: aeed36e017d23d8b2c4c0f3386988fcc1f061e74
 
 COCOAPODS: 1.10.1

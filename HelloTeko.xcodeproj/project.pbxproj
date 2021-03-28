@@ -10,6 +10,14 @@
 		010598F0260EDE4700E0CE61 /* ProductListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */; };
 		010598F3260EE1CE00E0CE61 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598F2260EE1CD00E0CE61 /* R.generated.swift */; };
 		010598F7260EE69C00E0CE61 /* BaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598F6260EE69C00E0CE61 /* BaseExtensions.swift */; };
+		0111E5F7261028B900F67650 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111E5F6261028B900F67650 /* ProductDetailViewController.swift */; };
+		0111E5F92610307600F67650 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111E5F82610307600F67650 /* MenuCell.swift */; };
+		0111E5FB261030C700F67650 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0111E5FA261030C700F67650 /* MenuCell.xib */; };
+		0111E5FF2610318D00F67650 /* MenuCellFocusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0111E5FE2610318D00F67650 /* MenuCellFocusView.xib */; };
+		0128B8E026103FEA00979172 /* PagingContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0128B8DF26103FEA00979172 /* PagingContent.storyboard */; };
+		0128B8E22610420C00979172 /* HardwareDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0128B8E12610420C00979172 /* HardwareDetailsViewController.swift */; };
+		0128B8E52610461300979172 /* HardwareDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0128B8E32610461300979172 /* HardwareDetailTableViewCell.swift */; };
+		0128B8E62610461300979172 /* HardwareDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0128B8E42610461300979172 /* HardwareDetailTableViewCell.xib */; };
 		019DA35E260F2318002FD5B1 /* UIImageView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA35D260F2318002FD5B1 /* UIImageView+Additions.swift */; };
 		019DA360260F249C002FD5B1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA35F260F249C002FD5B1 /* Product.swift */; };
 		019DA363260F2A08002FD5B1 /* ProductListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA362260F2A08002FD5B1 /* ProductListingViewModel.swift */; };
@@ -52,6 +60,14 @@
 		010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewController.swift; sourceTree = "<group>"; };
 		010598F2260EE1CD00E0CE61 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		010598F6260EE69C00E0CE61 /* BaseExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseExtensions.swift; sourceTree = "<group>"; };
+		0111E5F6261028B900F67650 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		0111E5F82610307600F67650 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		0111E5FA261030C700F67650 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		0111E5FE2610318D00F67650 /* MenuCellFocusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCellFocusView.xib; sourceTree = "<group>"; };
+		0128B8DF26103FEA00979172 /* PagingContent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PagingContent.storyboard; sourceTree = "<group>"; };
+		0128B8E12610420C00979172 /* HardwareDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailsViewController.swift; sourceTree = "<group>"; };
+		0128B8E32610461300979172 /* HardwareDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailTableViewCell.swift; sourceTree = "<group>"; };
+		0128B8E42610461300979172 /* HardwareDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HardwareDetailTableViewCell.xib; sourceTree = "<group>"; };
 		019DA35D260F2318002FD5B1 /* UIImageView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Additions.swift"; sourceTree = "<group>"; };
 		019DA35F260F249C002FD5B1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		019DA362260F2A08002FD5B1 /* ProductListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewModel.swift; sourceTree = "<group>"; };
@@ -159,8 +175,8 @@
 		010598E5260EDC5E00E0CE61 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				019DA368260F56F7002FD5B1 /* Other */,
 				010598EE260EDDB700E0CE61 /* CollectionViewCells */,
+				019DA368260F56F7002FD5B1 /* PageView */,
 				010598ED260EDDAB00E0CE61 /* TableViewCells */,
 			);
 			path = Views;
@@ -178,6 +194,7 @@
 		010598E8260EDD0700E0CE61 /* ProductDetail */ = {
 			isa = PBXGroup;
 			children = (
+				0111E5F6261028B900F67650 /* ProductDetailViewController.swift */,
 			);
 			path = ProductDetail;
 			sourceTree = "<group>";
@@ -219,6 +236,8 @@
 		010598ED260EDDAB00E0CE61 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				0128B8E32610461300979172 /* HardwareDetailTableViewCell.swift */,
+				0128B8E42610461300979172 /* HardwareDetailTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -232,6 +251,25 @@
 			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
+		0128B8DD26103F6A00979172 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0111E5F82610307600F67650 /* MenuCell.swift */,
+				0111E5FA261030C700F67650 /* MenuCell.xib */,
+				0111E5FE2610318D00F67650 /* MenuCellFocusView.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		0128B8DE26103F7A00979172 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				0128B8DF26103FEA00979172 /* PagingContent.storyboard */,
+				0128B8E12610420C00979172 /* HardwareDetailsViewController.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
 		019DA361260F29EB002FD5B1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,11 +278,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		019DA368260F56F7002FD5B1 /* Other */ = {
+		019DA368260F56F7002FD5B1 /* PageView */ = {
 			isa = PBXGroup;
 			children = (
+				0128B8DE26103F7A00979172 /* Content */,
+				0128B8DD26103F6A00979172 /* Menu */,
 			);
-			path = Other;
+			path = PageView;
 			sourceTree = "<group>";
 		};
 		01BBA977260ED9C600792BF0 = {
@@ -439,8 +479,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0128B8E026103FEA00979172 /* PagingContent.storyboard in Resources */,
 				01BBA990260ED9C700792BF0 /* LaunchScreen.storyboard in Resources */,
 				01BBA98D260ED9C700792BF0 /* Assets.xcassets in Resources */,
+				0111E5FF2610318D00F67650 /* MenuCellFocusView.xib in Resources */,
+				0128B8E62610461300979172 /* HardwareDetailTableViewCell.xib in Resources */,
+				0111E5FB261030C700F67650 /* MenuCell.xib in Resources */,
 				01BBA98B260ED9C600792BF0 /* Main.storyboard in Resources */,
 				01DFBA6B260F16C90017FB1C /* ProductListingCollectionViewCell.xib in Resources */,
 			);
@@ -590,6 +634,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01BBA984260ED9C600792BF0 /* AppDelegate.swift in Sources */,
+				0128B8E52610461300979172 /* HardwareDetailTableViewCell.swift in Sources */,
 				01DFBA6F260F190F0017FB1C /* UIColor+Additions.swift in Sources */,
 				01DFBA6A260F16C90017FB1C /* ProductListingCollectionViewCell.swift in Sources */,
 				019DA36C260F5F6B002FD5B1 /* SmartSearchMatcher.swift in Sources */,
@@ -598,7 +643,10 @@
 				01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */,
 				019DA365260F47EE002FD5B1 /* HelloTekoApi.swift in Sources */,
 				019DA35E260F2318002FD5B1 /* UIImageView+Additions.swift in Sources */,
+				0128B8E22610420C00979172 /* HardwareDetailsViewController.swift in Sources */,
+				0111E5F7261028B900F67650 /* ProductDetailViewController.swift in Sources */,
 				019DA360260F249C002FD5B1 /* Product.swift in Sources */,
+				0111E5F92610307600F67650 /* MenuCell.swift in Sources */,
 				019DA363260F2A08002FD5B1 /* ProductListingViewModel.swift in Sources */,
 				010598F3260EE1CE00E0CE61 /* R.generated.swift in Sources */,
 				01DFBA6D260F18D10017FB1C /* UIFont+Additions.swift in Sources */,
