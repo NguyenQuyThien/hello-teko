@@ -24,15 +24,7 @@ class HardwareDetailsViewController: UIViewController {
         HardwareDetail(title: "Bảo hành", detail: "36 tháng"),
         HardwareDetail(title: "Công suất", detail: "140W"),
         HardwareDetail(title: "Xuất xứ", detail: "Trung Quốc"),
-        HardwareDetail(title: "Bộ nhớ đệm", detail: "8.25MB"),
-        HardwareDetail(title: "Thương hiệu 2", detail: "Cool"),
-        HardwareDetail(title: "Bảo hành 2", detail: "3 tháng"),
-        HardwareDetail(title: "Bộ", detail: "8.2MB"),
-        HardwareDetail(title: "Thương", detail: "Cool"),
-        HardwareDetail(title: "Bảo", detail: "3 tháng"),
-        HardwareDetail(title: "Đệm", detail: "825MB"),
-        HardwareDetail(title: "Hiệu ", detail: "Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool Cool"),
-        HardwareDetail(title: "Thương", detail: "Cool")
+        HardwareDetail(title: "Bộ nhớ đệm", detail: "8.25MB")
     ]
     
     override func viewDidLoad() {
@@ -45,6 +37,9 @@ class HardwareDetailsViewController: UIViewController {
     private func setupTableView() {
         tableView.setCornerRadius(cornerRadius: 10)
         tableView.register(R.nib.hardwareDetailTableViewCell)
+        tableView.estimatedRowHeight = 0
+        tableView.estimatedSectionHeaderHeight = 0
+        tableView.estimatedSectionFooterHeight = 0
     }
     
     private func setupUI() {
@@ -64,6 +59,7 @@ class HardwareDetailsViewController: UIViewController {
         
     func getTableViewContentHeight() -> CGFloat {
         tableView.reloadData()
+        tableView.layoutSubviews()
         tableView.invalidateIntrinsicContentSize()
         tableView.layoutIfNeeded()
         return tableView.contentSize.height

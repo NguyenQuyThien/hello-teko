@@ -10,6 +10,7 @@
 		010598F0260EDE4700E0CE61 /* ProductListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */; };
 		010598F3260EE1CE00E0CE61 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598F2260EE1CD00E0CE61 /* R.generated.swift */; };
 		010598F7260EE69C00E0CE61 /* BaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598F6260EE69C00E0CE61 /* BaseExtensions.swift */; };
+		0109C865261166870020BCB6 /* VNDFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109C864261166870020BCB6 /* VNDFormatterTests.swift */; };
 		0111E5F7261028B900F67650 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111E5F6261028B900F67650 /* ProductDetailViewController.swift */; };
 		0111E5F92610307600F67650 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111E5F82610307600F67650 /* MenuCell.swift */; };
 		0111E5FB261030C700F67650 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0111E5FA261030C700F67650 /* MenuCell.xib */; };
@@ -64,6 +65,7 @@
 		010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewController.swift; sourceTree = "<group>"; };
 		010598F2260EE1CD00E0CE61 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		010598F6260EE69C00E0CE61 /* BaseExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseExtensions.swift; sourceTree = "<group>"; };
+		0109C864261166870020BCB6 /* VNDFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNDFormatterTests.swift; sourceTree = "<group>"; };
 		0111E5F6261028B900F67650 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		0111E5F82610307600F67650 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		0111E5FA261030C700F67650 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
@@ -236,13 +238,6 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		010598EC260EDD7100E0CE61 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
 		010598ED260EDDAB00E0CE61 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,7 +339,6 @@
 				010598EB260EDD4500E0CE61 /* Assets */,
 				010598E1260EDC1900E0CE61 /* Extension */,
 				010598E2260EDC2500E0CE61 /* Models */,
-				010598EC260EDD7100E0CE61 /* Networking */,
 				010598E3260EDC3A00E0CE61 /* Scenes */,
 				010598E5260EDC5E00E0CE61 /* Views */,
 				010598E4260EDC5200E0CE61 /* Utils */,
@@ -361,6 +355,7 @@
 			children = (
 				01BBA99A260ED9C700792BF0 /* HelloTekoTests.swift */,
 				01BBA99C260ED9C700792BF0 /* Info.plist */,
+				0109C864261166870020BCB6 /* VNDFormatterTests.swift */,
 			);
 			path = HelloTekoTests;
 			sourceTree = "<group>";
@@ -690,6 +685,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01BBA99B260ED9C700792BF0 /* HelloTekoTests.swift in Sources */,
+				0109C865261166870020BCB6 /* VNDFormatterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,7 @@ class ProductListingViewController: UIViewController {
     @IBOutlet weak var tfSearchInput: UITextField!
     private lazy var flowLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
+        collectionView.layoutIfNeeded()
         let width = collectionView.frame.size.width
         layout.itemSize = CGSize(width: width, height: 104)
         layout.minimumLineSpacing = 4

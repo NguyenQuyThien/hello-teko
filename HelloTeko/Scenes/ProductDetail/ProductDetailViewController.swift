@@ -58,6 +58,7 @@ class ProductDetailViewController: UIViewController {
     
     private lazy var flowLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
+        collectionViewOfSameItems.layoutIfNeeded()
         let width = collectionViewOfSameItems.frame.size.width / 375 * 150
         let height = collectionViewOfSameItems.frame.size.height
         layout.itemSize = CGSize(width: width, height: height)
@@ -89,7 +90,7 @@ class ProductDetailViewController: UIViewController {
                 return
             }
             if isShowMoreInfomation {
-                let magicNumber: CGFloat = 82 // height menu cell paging view + table view content pading
+                let magicNumber: CGFloat = 68 // height menu cell paging view + table view content pading
                 weakSelf.pagingViewHeightConstraint.constant =  weakSelf.dataSource[1].vc.getTableViewContentHeight() + magicNumber
             } else {
                 weakSelf.pagingViewHeightConstraint.constant = UIScreen.width / 375 * 238
