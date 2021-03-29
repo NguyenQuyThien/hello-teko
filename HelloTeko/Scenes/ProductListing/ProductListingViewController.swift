@@ -18,6 +18,7 @@ class ProductListingViewController: UIViewController {
     @IBOutlet weak var tfSearchInput: UITextField!
     private lazy var flowLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
+        collectionView.layoutIfNeeded()
         let width = collectionView.frame.size.width
         layout.itemSize = CGSize(width: width, height: 104)
         layout.minimumLineSpacing = 4
@@ -37,6 +38,14 @@ class ProductListingViewController: UIViewController {
     private func setupCollectionView() {
         collectionView.setCollectionViewLayout(flowLayout, animated: true)
         collectionView.register(R.nib.productListingCollectionViewCell)
+        collectionView.rx
+            .modelSelected(Product.self)
+            .subscribe(onNext: { [weak self] (model) in
+                guard let weakSelf = self else {return}
+                let vc = R.storyboard.main.productDetailViewController()!
+                vc.product = model
+                weakSelf.navigationController?.pushViewController(vc, animated: true)
+        }).disposed(by: disposeBag)
     }
     
     private func setupViewModel() {

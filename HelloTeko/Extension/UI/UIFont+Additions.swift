@@ -37,4 +37,12 @@ extension UIFont {
     class var textStyle7: UIFont {
         return UIFont.systemFont(ofSize: 15.0, weight: .regular)
     }
+    
+    class var textStyle8: UIFont {
+      return UIFont.systemFont(ofSize: 17.0, weight: .semibold)
+    }
+    
+    class var textStyle9: UIFont {
+      return UIFont.systemFont(ofSize: 14.0, weight: .semibold)
+    }
 }

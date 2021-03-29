@@ -10,10 +10,22 @@
 		010598F0260EDE4700E0CE61 /* ProductListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */; };
 		010598F3260EE1CE00E0CE61 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598F2260EE1CD00E0CE61 /* R.generated.swift */; };
 		010598F7260EE69C00E0CE61 /* BaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010598F6260EE69C00E0CE61 /* BaseExtensions.swift */; };
+		0109C865261166870020BCB6 /* VNDFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109C864261166870020BCB6 /* VNDFormatterTests.swift */; };
+		0111E5F7261028B900F67650 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111E5F6261028B900F67650 /* ProductDetailViewController.swift */; };
+		0111E5F92610307600F67650 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111E5F82610307600F67650 /* MenuCell.swift */; };
+		0111E5FB261030C700F67650 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0111E5FA261030C700F67650 /* MenuCell.xib */; };
+		0111E5FF2610318D00F67650 /* MenuCellFocusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0111E5FE2610318D00F67650 /* MenuCellFocusView.xib */; };
+		0128B8E026103FEA00979172 /* PagingContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0128B8DF26103FEA00979172 /* PagingContent.storyboard */; };
+		0128B8E22610420C00979172 /* HardwareDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0128B8E12610420C00979172 /* HardwareDetailsViewController.swift */; };
+		0128B8E52610461300979172 /* HardwareDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0128B8E32610461300979172 /* HardwareDetailTableViewCell.swift */; };
+		0128B8E62610461300979172 /* HardwareDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0128B8E42610461300979172 /* HardwareDetailTableViewCell.xib */; };
+		0163F46326106880002A4F9E /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163F46226106880002A4F9E /* UIView+Additions.swift */; };
+		0163F46626107818002A4F9E /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163F46526107818002A4F9E /* ProductDetailViewModel.swift */; };
+		0163F46A2610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163F4682610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.swift */; };
+		0163F46B2610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0163F4692610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.xib */; };
 		019DA35E260F2318002FD5B1 /* UIImageView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA35D260F2318002FD5B1 /* UIImageView+Additions.swift */; };
 		019DA360260F249C002FD5B1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA35F260F249C002FD5B1 /* Product.swift */; };
 		019DA363260F2A08002FD5B1 /* ProductListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA362260F2A08002FD5B1 /* ProductListingViewModel.swift */; };
-		019DA365260F47EE002FD5B1 /* HelloTekoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA364260F47EE002FD5B1 /* HelloTekoApi.swift */; };
 		019DA36C260F5F6B002FD5B1 /* SmartSearchMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA36B260F5F6B002FD5B1 /* SmartSearchMatcher.swift */; };
 		01BBA984260ED9C600792BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA983260ED9C600792BF0 /* AppDelegate.swift */; };
 		01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA985260ED9C600792BF0 /* SceneDelegate.swift */; };
@@ -26,6 +38,7 @@
 		01DFBA6B260F16C90017FB1C /* ProductListingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DFBA69260F16C90017FB1C /* ProductListingCollectionViewCell.xib */; };
 		01DFBA6D260F18D10017FB1C /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DFBA6C260F18D10017FB1C /* UIFont+Additions.swift */; };
 		01DFBA6F260F190F0017FB1C /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DFBA6E260F190E0017FB1C /* UIColor+Additions.swift */; };
+		01EA83DD2610C79D00D69F21 /* VND+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA83DC2610C79D00D69F21 /* VND+Formatter.swift */; };
 		270F1419082AB18D7BC80DEF /* Pods_HelloTeko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3469B9C436151CC81F946A65 /* Pods_HelloTeko.framework */; };
 		2C7C1C74DCB6772F4C9439F9 /* Pods_HelloTekoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3759CDAEDC8BC2BEC14B21B /* Pods_HelloTekoTests.framework */; };
 		7C9A0E53BB72688A270B209C /* Pods_HelloTeko_HelloTekoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113E20F87515261E95D485D /* Pods_HelloTeko_HelloTekoUITests.framework */; };
@@ -52,10 +65,22 @@
 		010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewController.swift; sourceTree = "<group>"; };
 		010598F2260EE1CD00E0CE61 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		010598F6260EE69C00E0CE61 /* BaseExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseExtensions.swift; sourceTree = "<group>"; };
+		0109C864261166870020BCB6 /* VNDFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNDFormatterTests.swift; sourceTree = "<group>"; };
+		0111E5F6261028B900F67650 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		0111E5F82610307600F67650 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		0111E5FA261030C700F67650 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		0111E5FE2610318D00F67650 /* MenuCellFocusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCellFocusView.xib; sourceTree = "<group>"; };
+		0128B8DF26103FEA00979172 /* PagingContent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PagingContent.storyboard; sourceTree = "<group>"; };
+		0128B8E12610420C00979172 /* HardwareDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailsViewController.swift; sourceTree = "<group>"; };
+		0128B8E32610461300979172 /* HardwareDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailTableViewCell.swift; sourceTree = "<group>"; };
+		0128B8E42610461300979172 /* HardwareDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HardwareDetailTableViewCell.xib; sourceTree = "<group>"; };
+		0163F46226106880002A4F9E /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		0163F46526107818002A4F9E /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		0163F4682610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalProductListingCollectionViewCell.swift; sourceTree = "<group>"; };
+		0163F4692610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalProductListingCollectionViewCell.xib; sourceTree = "<group>"; };
 		019DA35D260F2318002FD5B1 /* UIImageView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Additions.swift"; sourceTree = "<group>"; };
 		019DA35F260F249C002FD5B1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		019DA362260F2A08002FD5B1 /* ProductListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewModel.swift; sourceTree = "<group>"; };
-		019DA364260F47EE002FD5B1 /* HelloTekoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloTekoApi.swift; sourceTree = "<group>"; };
 		019DA36B260F5F6B002FD5B1 /* SmartSearchMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSearchMatcher.swift; sourceTree = "<group>"; };
 		01BBA980260ED9C600792BF0 /* HelloTeko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTeko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BBA983260ED9C600792BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +99,7 @@
 		01DFBA69260F16C90017FB1C /* ProductListingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListingCollectionViewCell.xib; sourceTree = "<group>"; };
 		01DFBA6C260F18D10017FB1C /* UIFont+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Additions.swift"; sourceTree = "<group>"; };
 		01DFBA6E260F190E0017FB1C /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		01EA83DC2610C79D00D69F21 /* VND+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VND+Formatter.swift"; sourceTree = "<group>"; };
 		02BB03B8870D15285F4B0C7C /* Pods-HelloTeko-HelloTekoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTeko-HelloTekoUITests.release.xcconfig"; path = "Target Support Files/Pods-HelloTeko-HelloTekoUITests/Pods-HelloTeko-HelloTekoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		08F3E989DD5610A06F15A9FF /* Pods-HelloTekoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTekoTests.debug.xcconfig"; path = "Target Support Files/Pods-HelloTekoTests/Pods-HelloTekoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3469B9C436151CC81F946A65 /* Pods_HelloTeko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTeko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,8 +185,8 @@
 		010598E5260EDC5E00E0CE61 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				019DA368260F56F7002FD5B1 /* Other */,
 				010598EE260EDDB700E0CE61 /* CollectionViewCells */,
+				019DA368260F56F7002FD5B1 /* PageView */,
 				010598ED260EDDAB00E0CE61 /* TableViewCells */,
 			);
 			path = Views;
@@ -169,7 +195,7 @@
 		010598E7260EDCC100E0CE61 /* ProductListing */ = {
 			isa = PBXGroup;
 			children = (
-				019DA361260F29EB002FD5B1 /* ViewModels */,
+				019DA361260F29EB002FD5B1 /* ViewModel */,
 				010598EF260EDE4700E0CE61 /* ProductListingViewController.swift */,
 			);
 			path = ProductListing;
@@ -178,6 +204,8 @@
 		010598E8260EDD0700E0CE61 /* ProductDetail */ = {
 			isa = PBXGroup;
 			children = (
+				0163F464261077EB002A4F9E /* ViewModel */,
+				0111E5F6261028B900F67650 /* ProductDetailViewController.swift */,
 			);
 			path = ProductDetail;
 			sourceTree = "<group>";
@@ -188,6 +216,7 @@
 				01DFBA6E260F190E0017FB1C /* UIColor+Additions.swift */,
 				01DFBA6C260F18D10017FB1C /* UIFont+Additions.swift */,
 				019DA35D260F2318002FD5B1 /* UIImageView+Additions.swift */,
+				0163F46226106880002A4F9E /* UIView+Additions.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -196,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				010598F6260EE69C00E0CE61 /* BaseExtensions.swift */,
+				01EA83DC2610C79D00D69F21 /* VND+Formatter.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -208,17 +238,11 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		010598EC260EDD7100E0CE61 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				019DA364260F47EE002FD5B1 /* HelloTekoApi.swift */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
 		010598ED260EDDAB00E0CE61 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				0128B8E32610461300979172 /* HardwareDetailTableViewCell.swift */,
+				0128B8E42610461300979172 /* HardwareDetailTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -228,23 +252,62 @@
 			children = (
 				01DFBA68260F16C90017FB1C /* ProductListingCollectionViewCell.swift */,
 				01DFBA69260F16C90017FB1C /* ProductListingCollectionViewCell.xib */,
+				0163F4682610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.swift */,
+				0163F4692610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.xib */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
-		019DA361260F29EB002FD5B1 /* ViewModels */ = {
+		0128B8DD26103F6A00979172 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0111E5F82610307600F67650 /* MenuCell.swift */,
+				0111E5FA261030C700F67650 /* MenuCell.xib */,
+				0111E5FE2610318D00F67650 /* MenuCellFocusView.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		0128B8DE26103F7A00979172 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				0163F46726107A43002A4F9E /* Storyboard */,
+				0128B8E12610420C00979172 /* HardwareDetailsViewController.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		0163F464261077EB002A4F9E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0163F46526107818002A4F9E /* ProductDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0163F46726107A43002A4F9E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0128B8DF26103FEA00979172 /* PagingContent.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		019DA361260F29EB002FD5B1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				019DA362260F2A08002FD5B1 /* ProductListingViewModel.swift */,
 			);
-			path = ViewModels;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		019DA368260F56F7002FD5B1 /* Other */ = {
+		019DA368260F56F7002FD5B1 /* PageView */ = {
 			isa = PBXGroup;
 			children = (
+				0128B8DE26103F7A00979172 /* Content */,
+				0128B8DD26103F6A00979172 /* Menu */,
 			);
-			path = Other;
+			path = PageView;
 			sourceTree = "<group>";
 		};
 		01BBA977260ED9C600792BF0 = {
@@ -276,7 +339,6 @@
 				010598EB260EDD4500E0CE61 /* Assets */,
 				010598E1260EDC1900E0CE61 /* Extension */,
 				010598E2260EDC2500E0CE61 /* Models */,
-				010598EC260EDD7100E0CE61 /* Networking */,
 				010598E3260EDC3A00E0CE61 /* Scenes */,
 				010598E5260EDC5E00E0CE61 /* Views */,
 				010598E4260EDC5200E0CE61 /* Utils */,
@@ -293,6 +355,7 @@
 			children = (
 				01BBA99A260ED9C700792BF0 /* HelloTekoTests.swift */,
 				01BBA99C260ED9C700792BF0 /* Info.plist */,
+				0109C864261166870020BCB6 /* VNDFormatterTests.swift */,
 			);
 			path = HelloTekoTests;
 			sourceTree = "<group>";
@@ -439,8 +502,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0163F46B2610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.xib in Resources */,
+				0128B8E026103FEA00979172 /* PagingContent.storyboard in Resources */,
 				01BBA990260ED9C700792BF0 /* LaunchScreen.storyboard in Resources */,
 				01BBA98D260ED9C700792BF0 /* Assets.xcassets in Resources */,
+				0111E5FF2610318D00F67650 /* MenuCellFocusView.xib in Resources */,
+				0128B8E62610461300979172 /* HardwareDetailTableViewCell.xib in Resources */,
+				0111E5FB261030C700F67650 /* MenuCell.xib in Resources */,
 				01BBA98B260ED9C600792BF0 /* Main.storyboard in Resources */,
 				01DFBA6B260F16C90017FB1C /* ProductListingCollectionViewCell.xib in Resources */,
 			);
@@ -590,18 +658,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				01BBA984260ED9C600792BF0 /* AppDelegate.swift in Sources */,
+				0128B8E52610461300979172 /* HardwareDetailTableViewCell.swift in Sources */,
+				01EA83DD2610C79D00D69F21 /* VND+Formatter.swift in Sources */,
 				01DFBA6F260F190F0017FB1C /* UIColor+Additions.swift in Sources */,
 				01DFBA6A260F16C90017FB1C /* ProductListingCollectionViewCell.swift in Sources */,
 				019DA36C260F5F6B002FD5B1 /* SmartSearchMatcher.swift in Sources */,
 				010598F7260EE69C00E0CE61 /* BaseExtensions.swift in Sources */,
+				0163F46A2610A9D3002A4F9E /* HorizontalProductListingCollectionViewCell.swift in Sources */,
 				010598F0260EDE4700E0CE61 /* ProductListingViewController.swift in Sources */,
 				01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */,
-				019DA365260F47EE002FD5B1 /* HelloTekoApi.swift in Sources */,
 				019DA35E260F2318002FD5B1 /* UIImageView+Additions.swift in Sources */,
+				0128B8E22610420C00979172 /* HardwareDetailsViewController.swift in Sources */,
+				0111E5F7261028B900F67650 /* ProductDetailViewController.swift in Sources */,
+				0163F46326106880002A4F9E /* UIView+Additions.swift in Sources */,
 				019DA360260F249C002FD5B1 /* Product.swift in Sources */,
+				0111E5F92610307600F67650 /* MenuCell.swift in Sources */,
 				019DA363260F2A08002FD5B1 /* ProductListingViewModel.swift in Sources */,
 				010598F3260EE1CE00E0CE61 /* R.generated.swift in Sources */,
 				01DFBA6D260F18D10017FB1C /* UIFont+Additions.swift in Sources */,
+				0163F46626107818002A4F9E /* ProductDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +685,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01BBA99B260ED9C700792BF0 /* HelloTekoTests.swift in Sources */,
+				0109C865261166870020BCB6 /* VNDFormatterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

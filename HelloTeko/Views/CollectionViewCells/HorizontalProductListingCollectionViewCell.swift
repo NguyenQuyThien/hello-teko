@@ -1,21 +1,19 @@
 //
-//  ProductListingCollectionViewCell.swift
+//  HorizontalProductListingCollectionViewCell.swift
 //  HelloTeko
 //
-//  Created by thien on 3/27/21.
+//  Created by thien on 3/28/21.
 //  Copyright © 2021 thiennq. All rights reserved.
 //
 
 import UIKit
 
-class ProductListingCollectionViewCell: UICollectionViewCell {
-
+class HorizontalProductListingCollectionViewCell: UICollectionViewCell {
+    
     // MARK: - Properties
     @IBOutlet weak var imgProduct: UIImageView!
     @IBOutlet weak var lblProductName: UILabel!
-    @IBOutlet weak var lblPrice: UILabel!
-    @IBOutlet weak var lblOriginalPrice: UILabel!
-    @IBOutlet weak var lblSave: UILabel!
+    @IBOutlet weak var lblProductPrice: UILabel!
     
     // MARK: - Life Cycle
     override func awakeFromNib() {
@@ -23,11 +21,8 @@ class ProductListingCollectionViewCell: UICollectionViewCell {
         lblProductName.font = .textStyle
         lblProductName.textColor = .darkGrey
         
-        lblPrice.font = .textStyle2
-        lblPrice.textColor = .tomato
-        
-        lblOriginalPrice.font = .textStyle6
-        lblOriginalPrice.textColor = .coolGrey
+        lblProductPrice.font = .textStyle2
+        lblProductPrice.textColor = .tomato
     }
     
     override func prepareForReuse() {
@@ -39,6 +34,6 @@ class ProductListingCollectionViewCell: UICollectionViewCell {
     func bindUI(model: Product){
         imgProduct.setImage(url: URL(string: model.imageURL), getThumbnailImage: true, completion: nil)
         lblProductName.text = model.name
-        lblPrice.attributedText = String(model.price.toVND.formattedWithSeparatorVND).setVNDAsSuperscript()
+        lblProductPrice.attributedText = String(model.price.toVND.formattedWithSeparatorVND).setVNDAsSuperscript()
     }
 }
