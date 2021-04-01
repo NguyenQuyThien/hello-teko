@@ -37,7 +37,7 @@ extension String {
     }
 }
 
-extension Double {
+extension Float {
     var toVND: Int {
         return Int(self * 23200)
     }

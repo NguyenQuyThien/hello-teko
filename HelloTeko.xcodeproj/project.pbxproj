@@ -34,11 +34,15 @@
 		01BBA990260ED9C700792BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA98E260ED9C700792BF0 /* LaunchScreen.storyboard */; };
 		01BBA99B260ED9C700792BF0 /* HelloTekoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA99A260ED9C700792BF0 /* HelloTekoTests.swift */; };
 		01BBA9A6260ED9C700792BF0 /* HelloTekoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA9A5260ED9C700792BF0 /* HelloTekoUITests.swift */; };
+		01BD31E626130213000DCB86 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD31E526130213000DCB86 /* ShoppingCart.swift */; };
+		01BD31EB26130AAD000DCB86 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD31EA26130AAD000DCB86 /* CartItem.swift */; };
+		01BD31F026130FEC000DCB86 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD31EF26130FEC000DCB86 /* CurrencyFormatter.swift */; };
+		01BD344E26158CAC000DCB86 /* ValueStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD344D26158CAC000DCB86 /* ValueStepper.swift */; };
 		01DFBA6A260F16C90017FB1C /* ProductListingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DFBA68260F16C90017FB1C /* ProductListingCollectionViewCell.swift */; };
 		01DFBA6B260F16C90017FB1C /* ProductListingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DFBA69260F16C90017FB1C /* ProductListingCollectionViewCell.xib */; };
 		01DFBA6D260F18D10017FB1C /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DFBA6C260F18D10017FB1C /* UIFont+Additions.swift */; };
 		01DFBA6F260F190F0017FB1C /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DFBA6E260F190E0017FB1C /* UIColor+Additions.swift */; };
-		01EA83DD2610C79D00D69F21 /* VND+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA83DC2610C79D00D69F21 /* VND+Formatter.swift */; };
+		01EA83DD2610C79D00D69F21 /* Other Currency VND+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA83DC2610C79D00D69F21 /* Other Currency VND+Formatter.swift */; };
 		270F1419082AB18D7BC80DEF /* Pods_HelloTeko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3469B9C436151CC81F946A65 /* Pods_HelloTeko.framework */; };
 		2C7C1C74DCB6772F4C9439F9 /* Pods_HelloTekoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3759CDAEDC8BC2BEC14B21B /* Pods_HelloTekoTests.framework */; };
 		7C9A0E53BB72688A270B209C /* Pods_HelloTeko_HelloTekoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113E20F87515261E95D485D /* Pods_HelloTeko_HelloTekoUITests.framework */; };
@@ -95,11 +99,15 @@
 		01BBA9A1260ED9C700792BF0 /* HelloTekoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloTekoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BBA9A5260ED9C700792BF0 /* HelloTekoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloTekoUITests.swift; sourceTree = "<group>"; };
 		01BBA9A7260ED9C700792BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BD31E526130213000DCB86 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		01BD31EA26130AAD000DCB86 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		01BD31EF26130FEC000DCB86 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		01BD344D26158CAC000DCB86 /* ValueStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueStepper.swift; sourceTree = "<group>"; };
 		01DFBA68260F16C90017FB1C /* ProductListingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingCollectionViewCell.swift; sourceTree = "<group>"; };
 		01DFBA69260F16C90017FB1C /* ProductListingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListingCollectionViewCell.xib; sourceTree = "<group>"; };
 		01DFBA6C260F18D10017FB1C /* UIFont+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Additions.swift"; sourceTree = "<group>"; };
 		01DFBA6E260F190E0017FB1C /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
-		01EA83DC2610C79D00D69F21 /* VND+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VND+Formatter.swift"; sourceTree = "<group>"; };
+		01EA83DC2610C79D00D69F21 /* Other Currency VND+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Other Currency VND+Formatter.swift"; sourceTree = "<group>"; };
 		02BB03B8870D15285F4B0C7C /* Pods-HelloTeko-HelloTekoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTeko-HelloTekoUITests.release.xcconfig"; path = "Target Support Files/Pods-HelloTeko-HelloTekoUITests/Pods-HelloTeko-HelloTekoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		08F3E989DD5610A06F15A9FF /* Pods-HelloTekoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTekoTests.debug.xcconfig"; path = "Target Support Files/Pods-HelloTekoTests/Pods-HelloTekoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3469B9C436151CC81F946A65 /* Pods_HelloTeko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTeko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				019DA35F260F249C002FD5B1 /* Product.swift */,
+				01BD31E526130213000DCB86 /* ShoppingCart.swift */,
+				01BD31EA26130AAD000DCB86 /* CartItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,6 +187,8 @@
 		010598E4260EDC5200E0CE61 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				01BD31EF26130FEC000DCB86 /* CurrencyFormatter.swift */,
+				01EA83DC2610C79D00D69F21 /* Other Currency VND+Formatter.swift */,
 				019DA36B260F5F6B002FD5B1 /* SmartSearchMatcher.swift */,
 			);
 			path = Utils;
@@ -225,7 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				010598F6260EE69C00E0CE61 /* BaseExtensions.swift */,
-				01EA83DC2610C79D00D69F21 /* VND+Formatter.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -335,6 +346,7 @@
 		01BBA982260ED9C600792BF0 /* HelloTeko */ = {
 			isa = PBXGroup;
 			children = (
+				01BD32C726158548000DCB86 /* Library */,
 				010598E0260EDC0200E0CE61 /* AppDelegate */,
 				010598EB260EDD4500E0CE61 /* Assets */,
 				010598E1260EDC1900E0CE61 /* Extension */,
@@ -367,6 +379,22 @@
 				01BBA9A7260ED9C700792BF0 /* Info.plist */,
 			);
 			path = HelloTekoUITests;
+			sourceTree = "<group>";
+		};
+		01BD32C726158548000DCB86 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				01BD32C826158572000DCB86 /* ValueStepper */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		01BD32C826158572000DCB86 /* ValueStepper */ = {
+			isa = PBXGroup;
+			children = (
+				01BD344D26158CAC000DCB86 /* ValueStepper.swift */,
+			);
+			path = ValueStepper;
 			sourceTree = "<group>";
 		};
 		1F184364C06D67631C2A1B6B /* Frameworks */ = {
@@ -659,8 +687,10 @@
 			files = (
 				01BBA984260ED9C600792BF0 /* AppDelegate.swift in Sources */,
 				0128B8E52610461300979172 /* HardwareDetailTableViewCell.swift in Sources */,
-				01EA83DD2610C79D00D69F21 /* VND+Formatter.swift in Sources */,
+				01BD31EB26130AAD000DCB86 /* CartItem.swift in Sources */,
+				01EA83DD2610C79D00D69F21 /* Other Currency VND+Formatter.swift in Sources */,
 				01DFBA6F260F190F0017FB1C /* UIColor+Additions.swift in Sources */,
+				01BD344E26158CAC000DCB86 /* ValueStepper.swift in Sources */,
 				01DFBA6A260F16C90017FB1C /* ProductListingCollectionViewCell.swift in Sources */,
 				019DA36C260F5F6B002FD5B1 /* SmartSearchMatcher.swift in Sources */,
 				010598F7260EE69C00E0CE61 /* BaseExtensions.swift in Sources */,
@@ -669,7 +699,9 @@
 				01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */,
 				019DA35E260F2318002FD5B1 /* UIImageView+Additions.swift in Sources */,
 				0128B8E22610420C00979172 /* HardwareDetailsViewController.swift in Sources */,
+				01BD31F026130FEC000DCB86 /* CurrencyFormatter.swift in Sources */,
 				0111E5F7261028B900F67650 /* ProductDetailViewController.swift in Sources */,
+				01BD31E626130213000DCB86 /* ShoppingCart.swift in Sources */,
 				0163F46326106880002A4F9E /* UIView+Additions.swift in Sources */,
 				019DA360260F249C002FD5B1 /* Product.swift in Sources */,
 				0111E5F92610307600F67650 /* MenuCell.swift in Sources */,

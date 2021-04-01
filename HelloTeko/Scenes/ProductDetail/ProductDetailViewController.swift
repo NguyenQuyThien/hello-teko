@@ -30,14 +30,20 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var collectionViewOfSameItems: UICollectionView!
     
     @IBOutlet weak var gradientBackgroundAddToCartBtn: UIView!
-    @IBOutlet weak var btbRemoveItems: UIButton!
-    @IBOutlet weak var lblTotalItems: UIButton!
-    @IBOutlet weak var btbAddItems: UIButton!
+    @IBOutlet weak var counterItem: ValueStepper!
     @IBOutlet weak var lblTotalPrice: UILabel!
     @IBOutlet weak var btnAddItemsToCart: UIButton!
+    @IBOutlet weak var totalItemsOrderInCart: UILabel!
+    
     
     private let disposeBag = DisposeBag()
     var product: Product!
+    private var totalOrder: Int = 0 {
+        didSet {
+            guard viewIfLoaded != nil else {return}
+            lblTotalPrice.text = (totalOrder * (product.price.toVND)).formattedWithSeparatorVND
+        }
+    }
     
     var menuViewController: PagingMenuViewController!
     var contentViewController: PagingContentViewController!
@@ -104,6 +110,11 @@ class ProductDetailViewController: UIViewController {
         menuViewController.registerFocusView(nib: UINib(resource: R.nib.menuCellFocusView))
         menuViewController.reloadData()
         contentViewController.reloadData()
+
+        ShoppingCart.shared.getTotalCount()
+            .map { String($0) }
+            .bind(to: totalItemsOrderInCart.rx.text)
+            .disposed(by: disposeBag)
     }
     
     private func setupCollectionView() {
@@ -114,6 +125,16 @@ class ProductDetailViewController: UIViewController {
     private func setupTap() {
         btnBackLeftBarButton.rx.tap.bind { [unowned self] in
             self.navigationController?.popViewController(animated: true)
+        }.disposed(by: disposeBag)
+        
+        counterItem.valueDidChangeHandler = { [weak self] totalOrder in
+            self?.totalOrder = Int(totalOrder)
+        }
+        
+        btnAddItemsToCart.rx.tap
+            .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
+            .bind { [unowned self] in
+                ShoppingCart.shared.addProduct(product, withCount: totalOrder)
         }.disposed(by: disposeBag)
     }
     
