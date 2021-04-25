@@ -7,15 +7,16 @@ target 'HelloTeko' do
 
   # Pods for HelloTeko
   pod 'Alamofire'
+  pod 'TrustKit'
   pod 'R.swift'
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'SVProgressHUD'
   pod 'Toaster'
-  pod 'UITextView+Placeholder'
+#  pod 'UITextView+Placeholder'
   pod 'SnapKit'
-  pod 'IQKeyboardManagerSwift'
-  pod 'SwiftyJSON'
+#  pod 'IQKeyboardManagerSwift'
+#  pod 'SwiftyJSON'
   pod 'Kingfisher', '5.9.0'
   pod 'PagingKit', '1.15.0'
 

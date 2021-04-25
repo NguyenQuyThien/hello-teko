@@ -9,7 +9,7 @@
 import UIKit
 import PagingKit
 
-class MenuCell: PagingMenuViewCell {
+final class MenuCell: PagingMenuViewCell {
     @IBOutlet weak var lblTitleLabel: UILabel!
     
     override public var isSelected: Bool {

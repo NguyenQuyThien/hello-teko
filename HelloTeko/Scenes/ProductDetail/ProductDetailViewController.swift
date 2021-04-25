@@ -11,7 +11,7 @@ import PagingKit
 import RxCocoa
 import RxSwift
 
-class ProductDetailViewController: UIViewController {
+final class ProductDetailViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var btnBackLeftBarButton: UIButton!
     @IBOutlet weak var lblTitleProductName: UILabel!
@@ -28,9 +28,10 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet var pagingViewHeightConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var collectionViewOfSameItems: UICollectionView!
+    @IBOutlet weak var indicatorOfSameItems: UIActivityIndicatorView!
     
     @IBOutlet weak var gradientBackgroundAddToCartBtn: UIView!
-    @IBOutlet weak var counterItem: ValueStepper!
+    @IBOutlet weak var valueStepperView: ValueStepper!
     @IBOutlet weak var lblTotalPrice: UILabel!
     @IBOutlet weak var btnAddItemsToCart: UIButton!
     @IBOutlet weak var totalItemsOrderInCart: UILabel!
@@ -52,10 +53,14 @@ class ProductDetailViewController: UIViewController {
     private static var mockTabBarView: (UIColor) -> HardwareDetailsViewController = { (color) in
         let vc = R.storyboard.pagingContent.hardwareDetailsViewController()!
         vc.view.backgroundColor = color
-        vc.container.isHidden = color == .white ? false : true
+        if color == .clear {
+            vc.dataSource.removeAll()
+        }
         return vc
     }
-    private let mockTabBars: [HardwareDetailsViewController] = [mockTabBarView(.green), mockTabBarView(.white), mockTabBarView(.yellow)]
+    private lazy var mockTabBars: [HardwareDetailsViewController] = [ProductDetailViewController.mockTabBarView(.clear),
+                                                                     ProductDetailViewController.mockTabBarView(.white),
+                                                                     ProductDetailViewController.mockTabBarView(.clear)]
     private lazy var dataSource = [(menuTitle: mockTitleTabBar.descriptionTitle.rawValue, vc: mockTabBars[0]),
                                    (menuTitle: mockTitleTabBar.hardwareTitle.rawValue, vc: mockTabBars[1]),
                                    (menuTitle: mockTitleTabBar.priceTitle.rawValue, vc: mockTabBars[2])]
@@ -66,7 +71,7 @@ class ProductDetailViewController: UIViewController {
         let layout = UICollectionViewFlowLayout()
         collectionViewOfSameItems.layoutIfNeeded()
         let width = collectionViewOfSameItems.frame.size.width / 375 * 150
-        let height = collectionViewOfSameItems.frame.size.height
+        let height = collectionViewOfSameItems.frame.size.height - 12
         layout.itemSize = CGSize(width: width, height: height)
         layout.minimumLineSpacing = 12
         layout.scrollDirection = .horizontal
@@ -82,6 +87,13 @@ class ProductDetailViewController: UIViewController {
         setupViewModel()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // reload PagingView when viewDidAppear
+        menuViewController.reloadData()
+        contentViewController.reloadData()
+    }
+    
     private func setupUI() {
         lblTitleProductName.text = product.name
         lblTitleProductName.font = .textStyle3
@@ -90,26 +102,10 @@ class ProductDetailViewController: UIViewController {
         lblDetailProductName.text = product.name
         lblDetailProductPrice.attributedText = String(product.price.toVND.formattedWithSeparatorVND).setVNDAsSuperscript()
         
-        // expand or collapse paging view
-        dataSource[1].vc.isShowMoreInfo = { [weak self] isShowMoreInfomation in
-            guard let weakSelf = self else {
-                return
-            }
-            if isShowMoreInfomation {
-                let magicNumber: CGFloat = 68 // height menu cell paging view + table view content pading
-                weakSelf.pagingViewHeightConstraint.constant =  weakSelf.dataSource[1].vc.getTableViewContentHeight() + magicNumber
-            } else {
-                weakSelf.pagingViewHeightConstraint.constant = UIScreen.width / 375 * 238
-            }
-            weakSelf.view.layoutIfNeeded()
-        }
-        
         gradientBackgroundAddToCartBtn.applyGradient(colours: [.tomatoTwo, .reddishOrange], locations: [0.0, 0.85, 1.0])
         
         menuViewController.register(nib: UINib(resource: R.nib.menuCell), forCellWithReuseIdentifier: menuCellIndentifier)
         menuViewController.registerFocusView(nib: UINib(resource: R.nib.menuCellFocusView))
-        menuViewController.reloadData()
-        contentViewController.reloadData()
 
         ShoppingCart.shared.getTotalCount()
             .map { String($0) }
@@ -123,19 +119,22 @@ class ProductDetailViewController: UIViewController {
     }
     
     private func setupTap() {
-        btnBackLeftBarButton.rx.tap.bind { [unowned self] in
-            self.navigationController?.popViewController(animated: true)
-        }.disposed(by: disposeBag)
+        btnBackLeftBarButton.rx.tap
+            .asDriver()
+            .drive(onNext: { [unowned self] in
+                self.navigationController?.popViewController(animated: true)
+            }).disposed(by: disposeBag)
         
-        counterItem.valueDidChangeHandler = { [weak self] totalOrder in
+        valueStepperView.valueDidChangeHandler = { [weak self] totalOrder in
             self?.totalOrder = Int(totalOrder)
         }
         
         btnAddItemsToCart.rx.tap
-            .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
-            .bind { [unowned self] in
-                ShoppingCart.shared.addProduct(product, withCount: totalOrder)
-        }.disposed(by: disposeBag)
+            .asDriver()
+            .throttle(.milliseconds(500))
+            .drive(onNext: { [unowned self] in
+                ShoppingCart.shared.addProduct(self.product, withCount: self.totalOrder)
+            }).disposed(by: disposeBag)
     }
     
     private func setupViewModel() {
@@ -147,6 +146,14 @@ class ProductDetailViewController: UIViewController {
             ){ (item: Int, data: Product, cell: HorizontalProductListingCollectionViewCell) in
                 cell.bindUI(model: data)
         }.disposed(by: disposeBag)
+        
+        viewModel.sameProducts
+            .asDriver()
+            .map { (products: [Product]) -> Bool in
+                return !products.isEmpty
+            }
+            .drive(indicatorOfSameItems.rx.isHidden)
+        .disposed(by: disposeBag)
         
         viewModel.getSameProducts(id: product.id)
     }
@@ -189,6 +196,19 @@ extension ProductDetailViewController: PagingContentViewControllerDataSource {
     }
     
     func contentViewController(viewController: PagingContentViewController, viewControllerAt index: Int) -> UIViewController {
+        // expand or collapse hardware tab (PagingView)
+        if index == 1 {
+            dataSource[index].vc.isShowMoreInfo = { [weak self] isShowMoreInfomation in
+                if isShowMoreInfomation {
+                    // height menu cell (PagingView) + table view content pading
+                    let magicNumber: CGFloat = 68
+                    self?.pagingViewHeightConstraint.constant =
+                        (self?.dataSource[index].vc.getTableViewContentHeight() ?? 0) + magicNumber
+                } else {
+                    self?.pagingViewHeightConstraint.constant = UIScreen.width / 375 * 238
+                }
+            }
+        }
         return dataSource[index].vc
     }
 }

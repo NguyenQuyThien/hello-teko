@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HorizontalProductListingCollectionViewCell: UICollectionViewCell {
+final class HorizontalProductListingCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
     @IBOutlet weak var imgProduct: UIImageView!

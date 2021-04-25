@@ -7,21 +7,21 @@
 //
 
 import Foundation
-import Alamofire
+import RxCocoa
 import RxSwift
 
-class ProductListingViewModel {
+final class ProductListingViewModel {
     
     var allProducts = [Product]()
-    var products = PublishSubject<[Product]>()
+    var products = BehaviorRelay<[Product]>(value: [])
     
     func fetchData() {
-        AF.request("https://run.mocky.io/v3/7af6f34b-b206-4bed-b447-559fda148ca5")
-            .validate()
-            .responseDecodable(of: [Product].self) { [weak self] (response) in
-                guard let models = response.value else { return }
-                self?.allProducts = models
-                self?.products.onNext(self?.allProducts ?? [])
+        HTLoading.showLoading()
+        ApiManager.shared.getProducts(route: AppConstants.productsPath,
+                                      method: .get) { [weak self] (products: [Product]) in
+                HTLoading.dismissLoading()
+                self?.allProducts = products
+                self?.products.accept(self?.allProducts ?? [])
         }
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HardwareDetailTableViewCell: UITableViewCell {
+final class HardwareDetailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDetail: UILabel!

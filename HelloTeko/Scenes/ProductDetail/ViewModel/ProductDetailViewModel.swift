@@ -7,24 +7,22 @@
 //
 
 import Foundation
-import Alamofire
+import RxCocoa
 import RxSwift
 
-class ProductDetailViewModel {
+final class ProductDetailViewModel {
     
-    var itemsInCart = BehaviorSubject<Int>(value: 0)
+    var itemsInCart = BehaviorRelay<Int>(value: 0)
     let itemPrice = 0
-    var totalItems = BehaviorSubject<Int>(value: 0)
-    var sameProducts = PublishSubject<[Product]>()
+    var totalItems = BehaviorRelay<Int>(value: 0)
+    var sameProducts = BehaviorRelay<[Product]>(value: [])
     
     func getSameProducts(id: Int) {
-        AF.request("https://run.mocky.io/v3/7af6f34b-b206-4bed-b447-559fda148ca5")
-            .validate()
-            .responseDecodable(of: [Product].self) { [weak self] (response) in
-                guard let models = response.value else { return }
-                self?.sameProducts.onNext(models.filter({
-                    return ($0.id < id) && ($0.id % 5 == 0)
-                }))
+        ApiManager.shared.getProducts(route: AppConstants.productsPath,
+                                      method: .get) { [weak self] (products: [Product]) in
+            self?.sameProducts.accept(products.filter({
+                return ($0.id < id) && ($0.id % 5 == 0)
+            }))
         }
     }
 }
