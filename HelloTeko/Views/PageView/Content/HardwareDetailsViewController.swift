@@ -7,24 +7,26 @@
 //
 
 import UIKit
+import RxCocoa
 import RxSwift
 
-class HardwareDetailsViewController: UIViewController {
+final class HardwareDetailsViewController: UIViewController {
     
-    @IBOutlet weak var container: UIStackView!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var detailInforContainer: UIView!
+    @IBOutlet weak var emptyStateView: UIStackView!
+    @IBOutlet weak var tableView: AutoHeightTableView!
     @IBOutlet weak var gradientBackground: UIView!
     @IBOutlet weak var btnViewTapped: UIButton!
     
     var isShowMoreInfo: ((Bool)->Void)?
     private let disposeBag = DisposeBag()
     
-    private var dataSource = [
-        HardwareDetail(title: "Thương hiệu", detail: "Cooler Master"),
+    var dataSource = [
+        HardwareDetail(title: "Thương hiệu", detail: "Cooler Master Cooler Master Cooler Master Cooler Master Cooler Master Cooler Master Cooler Master Cooler Master Cooler Master Cooler Master Cooler Master Cooler Master Cooler Master Cooler Master Cooler Master Cooler Master Cooler Master"),
         HardwareDetail(title: "Bảo hành", detail: "36 tháng"),
         HardwareDetail(title: "Công suất", detail: "140W"),
         HardwareDetail(title: "Xuất xứ", detail: "Trung Quốc"),
-        HardwareDetail(title: "Bộ nhớ đệm", detail: "8.25MB")
+        HardwareDetail(title: "Bộ nhớ đệm", detail: "8.25MB 8.25MB 8.25MB 8.25MB 8.25MB"),
     ]
     
     override func viewDidLoad() {
@@ -34,35 +36,43 @@ class HardwareDetailsViewController: UIViewController {
         setupTap()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Driver.just(dataSource) // hack: cold observable to hide view when "information not found"
+            .map { [weak self] (dataSource: [HardwareDetail]) -> Bool in
+                self?.emptyStateView.isHidden = !dataSource.isEmpty
+                return dataSource.isEmpty
+            }
+            .drive(detailInforContainer.rx.isHidden)
+            .disposed(by: disposeBag)
+    }
+    
     private func setupTableView() {
         tableView.setCornerRadius(cornerRadius: 10)
         tableView.register(R.nib.hardwareDetailTableViewCell)
-        tableView.estimatedRowHeight = 0
-        tableView.estimatedSectionHeaderHeight = 0
-        tableView.estimatedSectionFooterHeight = 0
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 44.0
     }
     
     private func setupUI() {
+        detailInforContainer.isHidden = true
         gradientBackground.applyGradient(colours: [.init(white: 1, alpha: 0), .white],
                                          locations: [0.0, 0.75, 1.0], isVertical: true)
     }
     
     private func setupTap() {
         btnViewTapped.rx.tap
-            .bind { [unowned self] in
+            .asDriver()
+            .drive(onNext: { [unowned self] in
                 self.btnViewTapped.isSelected.toggle()
                 self.gradientBackground.isHidden = self.btnViewTapped.isSelected
                 self.view.layoutIfNeeded()
                 self.isShowMoreInfo?(self.btnViewTapped.isSelected)
-        }.disposed(by: disposeBag)
+            }).disposed(by: disposeBag)
     }
-        
+    
     func getTableViewContentHeight() -> CGFloat {
-        tableView.reloadData()
-        tableView.layoutSubviews()
-        tableView.invalidateIntrinsicContentSize()
-        tableView.layoutIfNeeded()
-        return tableView.contentSize.height
+        return tableView.intrinsicContentSize.height
     }
 }
 

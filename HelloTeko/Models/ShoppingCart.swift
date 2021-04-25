@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class ShoppingCart {
+final class ShoppingCart {
     
     static let shared = ShoppingCart()
     
