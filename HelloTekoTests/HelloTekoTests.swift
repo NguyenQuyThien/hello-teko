@@ -36,7 +36,7 @@ extension HelloTekoTests {
     }
 
     func test_singleWordSearchStringDoesNotMatchNonPrefixes() {
-        test("w", doesNotMatch: "acer")
+        test("c", doesNotMatch: "acer")
         test("op", doesNotMatch: "laptop")
     }
     

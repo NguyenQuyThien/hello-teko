@@ -45,7 +45,7 @@
                                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập tên, mã sản phẩm" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hR6-JM-feH">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập tên, mã sản phẩm" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hR6-JM-feH">
                                                 <rect key="frame" x="46" y="0.0" width="294" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -464,10 +464,10 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbn-fv-V3j">
-                                                                        <rect key="frame" x="15" y="11" width="125" height="48"/>
+                                                                        <rect key="frame" x="15" y="11" width="120" height="48"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Edi-nV-O6W" customClass="ValueStepper" customModule="HelloTeko" customModuleProvider="target">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="48"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="48"/>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" priority="250" constant="120" id="uXi-c0-OzS"/>
