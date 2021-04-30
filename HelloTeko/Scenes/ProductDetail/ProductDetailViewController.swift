@@ -10,13 +10,13 @@ import UIKit
 import PagingKit
 import RxCocoa
 import RxSwift
+import RxAnimated
 
 final class ProductDetailViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var btnBackLeftBarButton: UIButton!
     @IBOutlet weak var lblTitleProductName: UILabel!
     @IBOutlet weak var lblTitleProductPrice: UILabel!
-    @IBOutlet weak var lblNumberItemsInCart: UILabel!
     @IBOutlet weak var imgProduct: UIImageView!
     @IBOutlet weak var pageControl: UIPageControl!
     
@@ -42,7 +42,10 @@ final class ProductDetailViewController: UIViewController {
     private var totalOrder: Int = 0 {
         didSet {
             guard viewIfLoaded != nil else {return}
-            lblTotalPrice.text = (totalOrder * (product.price.toVND)).formattedWithSeparatorVND
+            Observable.just((totalOrder * (product.price.toVND)).formattedWithSeparatorVND)
+                .asDriver(onErrorJustReturn: "0 đ")
+                .bind(animated: lblTotalPrice.rx.animated.tick(.bottom, duration: 0.3).text)
+                .dispose()
         }
     }
     
@@ -59,7 +62,7 @@ final class ProductDetailViewController: UIViewController {
         return vc
     }
     private lazy var mockTabBars: [HardwareDetailsViewController] = [ProductDetailViewController.mockTabBarView(.clear),
-                                                                     ProductDetailViewController.mockTabBarView(.white),
+                                                                     ProductDetailViewController.mockTabBarView(.white0),
                                                                      ProductDetailViewController.mockTabBarView(.clear)]
     private lazy var dataSource = [(menuTitle: mockTitleTabBar.descriptionTitle.rawValue, vc: mockTabBars[0]),
                                    (menuTitle: mockTitleTabBar.hardwareTitle.rawValue, vc: mockTabBars[1]),
@@ -109,7 +112,7 @@ final class ProductDetailViewController: UIViewController {
 
         ShoppingCart.shared.getTotalCount()
             .map { String($0) }
-            .bind(to: totalItemsOrderInCart.rx.text)
+            .bind(animated: totalItemsOrderInCart.rx.animated.flip(.top, duration: 0.33).text)
             .disposed(by: disposeBag)
     }
     
@@ -199,13 +202,16 @@ extension ProductDetailViewController: PagingContentViewControllerDataSource {
         // expand or collapse hardware tab (PagingView)
         if index == 1 {
             dataSource[index].vc.isShowMoreInfo = { [weak self] isShowMoreInfomation in
-                if isShowMoreInfomation {
-                    // height menu cell (PagingView) + table view content pading
-                    let magicNumber: CGFloat = 68
-                    self?.pagingViewHeightConstraint.constant =
-                        (self?.dataSource[index].vc.getTableViewContentHeight() ?? 0) + magicNumber
-                } else {
-                    self?.pagingViewHeightConstraint.constant = UIScreen.width / 375 * 238
+                UIView.animate(withDuration: 0.3) {
+                    if isShowMoreInfomation {
+                        // height menu cell (PagingView) + table view content pading
+                        let magicNumber: CGFloat = 68
+                        self?.pagingViewHeightConstraint.constant =
+                            (self?.dataSource[index].vc.getTableViewContentHeight() ?? 0) + magicNumber
+                    } else {
+                        self?.pagingViewHeightConstraint.constant = UIScreen.width / 375 * 238
+                    }
+                    self?.view.layoutIfNeeded()
                 }
             }
         }

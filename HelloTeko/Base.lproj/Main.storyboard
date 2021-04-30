@@ -582,7 +582,6 @@
                         <outlet property="indicatorOfSameItems" destination="huU-or-lv5" id="bpa-ac-QL2"/>
                         <outlet property="lblDetailProductName" destination="iOR-zr-sZ2" id="hzN-Gt-bxr"/>
                         <outlet property="lblDetailProductPrice" destination="jXY-kU-BmT" id="xel-sH-P0c"/>
-                        <outlet property="lblNumberItemsInCart" destination="wun-lX-ZbV" id="xDp-Zh-rti"/>
                         <outlet property="lblProductCode" destination="pds-2n-QhB" id="edu-4B-g6P"/>
                         <outlet property="lblProuctCodeLabel" destination="cPm-Q1-GhO" id="mXb-j3-O72"/>
                         <outlet property="lblTitleProductName" destination="SOY-Zc-t9M" id="x54-Cz-e9N"/>
