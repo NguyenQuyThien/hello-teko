@@ -30,7 +30,6 @@
 		01B4B36526349730005BC4FA /* HTLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4B36426349730005BC4FA /* HTLoading.swift */; };
 		01BA5607263338120029E6C8 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BA5606263338120029E6C8 /* ApiManager.swift */; };
 		01BBA984260ED9C600792BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA983260ED9C600792BF0 /* AppDelegate.swift */; };
-		01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBA985260ED9C600792BF0 /* SceneDelegate.swift */; };
 		01BBA98B260ED9C600792BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA989260ED9C600792BF0 /* Main.storyboard */; };
 		01BBA98D260ED9C700792BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA98C260ED9C700792BF0 /* Assets.xcassets */; };
 		01BBA990260ED9C700792BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBA98E260ED9C700792BF0 /* LaunchScreen.storyboard */; };
@@ -94,7 +93,6 @@
 		01BA5606263338120029E6C8 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		01BBA980260ED9C600792BF0 /* HelloTeko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTeko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BBA983260ED9C600792BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01BBA985260ED9C600792BF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		01BBA98A260ED9C600792BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01BBA98C260ED9C700792BF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01BBA98F260ED9C700792BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				01BBA983260ED9C600792BF0 /* AppDelegate.swift */,
-				01BBA985260ED9C600792BF0 /* SceneDelegate.swift */,
 				01DFC7212633FE3300C52150 /* AppConstants.swift */,
 			);
 			path = AppDelegate;
@@ -734,7 +731,6 @@
 				010598F0260EDE4700E0CE61 /* ProductListingViewController.swift in Sources */,
 				01D2E07C2633D8A70028FC3A /* AutoHeightTableView.swift in Sources */,
 				01B4B36526349730005BC4FA /* HTLoading.swift in Sources */,
-				01BBA986260ED9C600792BF0 /* SceneDelegate.swift in Sources */,
 				01BA5607263338120029E6C8 /* ApiManager.swift in Sources */,
 				019DA35E260F2318002FD5B1 /* UIImageView+Additions.swift in Sources */,
 				0128B8E22610420C00979172 /* HardwareDetailsViewController.swift in Sources */,
@@ -854,7 +850,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -908,7 +904,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -927,7 +923,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5X5Y8J7J43;
 				INFOPLIST_FILE = HelloTeko/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -949,7 +945,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5X5Y8J7J43;
 				INFOPLIST_FILE = HelloTeko/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
