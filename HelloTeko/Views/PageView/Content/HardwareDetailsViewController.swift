@@ -9,7 +9,7 @@
 import UIKit
 import RxCocoa
 import RxSwift
-
+import RxAnimated
 final class HardwareDetailsViewController: UIViewController {
     
     @IBOutlet weak var detailInforContainer: UIView!
@@ -40,11 +40,15 @@ final class HardwareDetailsViewController: UIViewController {
         super.viewWillAppear(animated)
         Driver.just(dataSource) // hack: cold observable to hide view when "information not found"
             .map { [weak self] (dataSource: [HardwareDetail]) -> Bool in
-                self?.emptyStateView.isHidden = !dataSource.isEmpty
+                guard let strongSelf = self else {return true}
+                UIView.transition(with: strongSelf.emptyStateView, duration: 0.3,
+                                  options: .transitionCrossDissolve, animations: {
+                    strongSelf.emptyStateView.isHidden = !dataSource.isEmpty
+                }, completion: nil)
                 return dataSource.isEmpty
             }
             .drive(detailInforContainer.rx.isHidden)
-            .disposed(by: disposeBag)
+            .dispose()
     }
     
     private func setupTableView() {

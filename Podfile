@@ -11,6 +11,7 @@ target 'HelloTeko' do
   pod 'R.swift'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod "RxAnimated"
   pod 'SVProgressHUD'
   pod 'Toaster'
 #  pod 'UITextView+Placeholder'

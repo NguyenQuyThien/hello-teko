@@ -7,6 +7,13 @@ PODS:
   - R.swift (5.4.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
+  - RxAnimated (0.9.0):
+    - RxAnimated/Core (= 0.9.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxAnimated/Core (0.9.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - RxCocoa (6.1.0):
     - RxRelay (= 6.1.0)
     - RxSwift (= 6.1.0)
@@ -23,6 +30,7 @@ DEPENDENCIES:
   - Kingfisher (= 5.9.0)
   - PagingKit (= 1.15.0)
   - R.swift
+  - RxAnimated
   - RxCocoa
   - RxSwift
   - SnapKit
@@ -37,6 +45,7 @@ SPEC REPOS:
     - PagingKit
     - R.swift
     - R.swift.Library
+    - RxAnimated
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -51,6 +60,7 @@ SPEC CHECKSUMS:
   PagingKit: 4bd58b65d71a82ab98486b6927e870c7fbc6c6eb
   R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  RxAnimated: e53fb66cafc0539faf881b734f7412a624527f0a
   RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
   RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
   RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
@@ -59,6 +69,6 @@ SPEC CHECKSUMS:
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
   TrustKit: dac38bb37e49bdfeca41b1a19d020da38017b51c
 
-PODFILE CHECKSUM: 88bd31d6fa1521ed2c4399360ad8e8c1d354255d
+PODFILE CHECKSUM: aaa1e779d0d253e73d32e127b63be7b8902f3ef8
 
 COCOAPODS: 1.10.1
