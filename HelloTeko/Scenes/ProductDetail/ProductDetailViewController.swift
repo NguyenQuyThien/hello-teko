@@ -34,6 +34,7 @@ final class ProductDetailViewController: UIViewController {
     @IBOutlet weak var valueStepperView: ValueStepper!
     @IBOutlet weak var lblTotalPrice: UILabel!
     @IBOutlet weak var btnAddItemsToCart: UIButton!
+    @IBOutlet weak var addToCartImage: UIImageView!
     @IBOutlet weak var totalItemsOrderInCart: UILabel!
     
     
@@ -113,6 +114,16 @@ final class ProductDetailViewController: UIViewController {
         ShoppingCart.shared.getTotalCount()
             .map { String($0) }
             .bind(animated: totalItemsOrderInCart.rx.animated.flip(.top, duration: 0.33).text)
+            .disposed(by: disposeBag)
+        
+        ShoppingCart.shared.products
+            .asDriver(onErrorJustReturn: [:])
+            .filter { (products: [Product : Int]) -> Bool in
+                return !products.isEmpty
+            }.map({ (_) -> UIImage in
+                return R.image.addToCart()!
+            })
+            .drive(addToCartImage.rx.animated.tick(.left, duration: 0.75).image)
             .disposed(by: disposeBag)
     }
     
